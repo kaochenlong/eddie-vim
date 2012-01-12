@@ -1,0 +1,63 @@
+[submodule "bundle/cocoa.vim"]
+	path = bundle/cocoa.vim
+	url = git://github.com/msanders/cocoa.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://github.com/wincent/Command-T.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "taglist.vim"]
+	path = taglist.vim
+	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/vim-coffeescript"]
+	path = bundle/vim-coffeescript
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/vim-nerdtree-tabs"]
+	path = bundle/vim-nerdtree-tabs
+	url = git://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "bundle/vim-preview"]
+	path = bundle/vim-preview
+	url = git://github.com/greyblake/vim-preview.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/vim-rvm"]
+	path = bundle/vim-rvm
+	url = git://github.com/tpope/vim-rvm.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/minibufexxpl.vim"]
+	path = bundle/minibufexxpl.vim
+	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/taglist.vim"]
+	path = bundle/taglist.vim
+	url = git://github.com/vim-scripts/taglist.vim.git
