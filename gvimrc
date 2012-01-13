@@ -32,9 +32,9 @@ if has("gui_macvim")
   map <F3> :TMiniBufExplorer<cr>
 
   " command-T
-  set wildignore+=*.o,*.obj,.git,*.pyc
+  set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif
 
-  " ctags
+  " ctags path
   let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
   map <F4> :TlistToggle<cr>
 endif

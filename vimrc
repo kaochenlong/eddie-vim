@@ -116,7 +116,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:EasyMotion_leader_key = '<Leader>'
 
 " vimgrep
-map <leader>g :vimgrep //g **/*.*<left><left><left><left><left><left><left><left><left>
+map <leader>g :vimgrep //j **/*.*<left><left><left><left><left><left><left><left><left>
 
 " remap VIM 0
 map 0 ^
