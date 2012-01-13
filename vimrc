@@ -78,6 +78,19 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.m setf objc
 augroup END
 
+" for Tabularize
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
+
 " ===============================
 " custom key and configurations
 " ===============================
@@ -107,3 +120,9 @@ map <leader>g :vimgrep //g **/*.*<left><left><left><left><left><left><left><left
 
 " remap VIM 0
 map 0 ^
+
+" force myself to not to use the error keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
