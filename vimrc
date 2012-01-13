@@ -105,6 +105,7 @@ map <c-a> ggVG
 
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks  = 1
 
 " comment
 map <Leader><Leader> <Leader>c<space>
