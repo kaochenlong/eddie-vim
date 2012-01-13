@@ -9,8 +9,9 @@ do
   if [ -d $i ]; then
     cd $i;
     if [ -e .git ]; then
+      echo "Module: $i";
       git checkout master; git pull;
     fi;
-    cd -
+    cd ..
   fi;
 done
