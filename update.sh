@@ -10,7 +10,14 @@ do
     cd $i;
     if [ -e .git ]; then
       echo "Module: $i";
-      git checkout master; git pull;
+      # not all repos are in "master" branch
+      if [ $i == "vim-powerline" ]
+      then
+        git checkout develop;
+      else
+        git checkout master;
+      fi;
+      git pull;
     fi;
     cd ..
   fi;
