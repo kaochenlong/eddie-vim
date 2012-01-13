@@ -21,16 +21,6 @@ if has("gui_macvim")
     exec "nnoremap <D-".i."> ".i."gt"
   endfor
 
-  " for mini buffer explorer
-  let g:miniBufExplModSelTarget = 1
-  let g:miniBufExplorerMoreThanOne = 2
-  let g:miniBufExplModSelTarget = 0
-  let g:miniBufExplUseSingleClick = 1
-  let g:miniBufExplMapWindowNavVim = 1
-  let g:miniBufExplVSplit = 25
-  let g:miniBufExplSplitBelow= 1
-  map <F3> :TMiniBufExplorer<cr>
-
   " command-T
   set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif
 
@@ -40,3 +30,12 @@ if has("gui_macvim")
   map <F4> :TlistToggle<cr>
 endif
 
+"function! TextUpsideDown()
+  "let search = @/
+  "let move_line = line( "'<" ) - 1
+  "exec  "'<,'> g#^#m" . move_line
+  "let @/ = search
+"endfunction
+
+"amenu mymenu.TextUpside&Down :call TextUpsideDown()<CR>
+"nnoremap <F5> :popup mymenu<CR>

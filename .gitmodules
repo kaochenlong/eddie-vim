@@ -61,3 +61,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = git://github.com/skammer/vim-css-color.git

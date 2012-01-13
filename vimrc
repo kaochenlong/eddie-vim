@@ -92,7 +92,7 @@ function! s:align()
 endfunction
 
 " ===============================
-" custom key and configurations
+" custom key and plugin configurations
 " ===============================
 " add a new line without entering insert mode
 map <S-Enter> o<Esc>
@@ -132,3 +132,19 @@ map <silent> <c-\>f :FufCoverageFile<cr>
 "map <silent> <c-\>f :FufFile<cr>
 map <silent> <c-\>d :FufDir<cr>
 map <silent> <c-\>b :FufBuffer<cr>
+
+" Yankring
+nnoremap <silent> <F11> :YRShow<CR>
+let g:yankring_history_dir='/tmp'
+
+" mini buffer explorer
+let g:miniBufExplModSelTarget = 1
+let g:miniBufExplorerMoreThanOne = 2
+let g:miniBufExplModSelTarget = 0
+let g:miniBufExplUseSingleClick = 1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplVSplit = 25
+let g:miniBufExplSplitBelow= 1
+noremap <F3> :TMiniBufExplorer<cr>
+noremap <F7> :bp<cr>
+noremap <F8> :bn<cr>
