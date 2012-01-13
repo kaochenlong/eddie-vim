@@ -36,6 +36,7 @@ if has("gui_macvim")
 
   " ctags path
   let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
+  let Tlist_WinWidth = 50
   map <F4> :TlistToggle<cr>
 endif
 

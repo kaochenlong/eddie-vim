@@ -126,3 +126,9 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" fuzzyfinder
+map <silent> <c-\>f :FufCoverageFile<cr>
+"map <silent> <c-\>f :FufFile<cr>
+map <silent> <c-\>d :FufDir<cr>
+map <silent> <c-\>b :FufBuffer<cr>
