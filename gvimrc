@@ -26,16 +26,6 @@ if has("gui_macvim")
 
   " ctags path
   let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
-  let Tlist_WinWidth = 50
+  let Tlist_WinWidth = 40
   map <F4> :TlistToggle<cr>
 endif
-
-"function! TextUpsideDown()
-  "let search = @/
-  "let move_line = line( "'<" ) - 1
-  "exec  "'<,'> g#^#m" . move_line
-  "let @/ = search
-"endfunction
-
-"amenu mymenu.TextUpside&Down :call TextUpsideDown()<CR>
-"nnoremap <F5> :popup mymenu<CR>

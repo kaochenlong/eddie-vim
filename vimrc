@@ -15,7 +15,6 @@ set number
 set numberwidth=5
 set title
 set showmode
-set nofoldenable
 set nobomb
 set nostartofline
 
@@ -30,6 +29,7 @@ set hlsearch		" search highlighting
 syntax enable
 set background=dark
 colorscheme railscasts
+set t_Co=256
 
 set nobackup		" no *~ backup files
 set noswapfile
@@ -38,17 +38,16 @@ set copyindent		" copy the previous indentation on autoindenting
 set ignorecase		" ignore case when searching
 set smartcase		"
 set smarttab		" insert tabs on the start of a line according to
+set expandtab        "replace <TAB> with spaces
+set softtabstop=2
+set shiftwidth=2
+au FileType Makefile set noexpandtab
 
 " disable sound on errors
 set visualbell
 set noerrorbells
 set t_vb=
 set tm=500
-
-set expandtab        "replace <TAB> with spaces
-set softtabstop=2
-set shiftwidth=2
-au FileType Makefile set noexpandtab
 
 set laststatus=2
 set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \
@@ -149,3 +148,27 @@ let g:miniBufExplSplitBelow= 1
 noremap <F3> :TMiniBufExplorer<cr>
 noremap <F7> :bp<cr>
 noremap <F8> :bn<cr>
+
+" folding
+"hi Folded guibg=red guifg=Red cterm=bold ctermbg=DarkGrey ctermfg=lightblue
+"hi FoldColumn guibg=grey78 gui=Bold guifg=DarkBlue
+set foldcolumn=2
+set foldclose=
+set foldmethod=syntax
+set foldnestmax=2
+set foldlevel=0
+set fillchars=vert:\|,fold:\
+set foldminlines=1
+fu! ToggleFold()
+  if foldlevel('.') == 0
+    normal! l
+  else
+    if foldclosed('.') < 0
+      . foldclose
+    else
+      . foldopen
+    endif
+  endif
+  echo
+endf
+noremap <space> :call ToggleFold()<CR>
