@@ -10,7 +10,7 @@ set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
 set linespace=0
 set cursorline
-"set cursorcolumn
+set nofoldenable
 set number
 set numberwidth=5
 set title
@@ -148,27 +148,3 @@ let g:miniBufExplSplitBelow= 1
 noremap <F3> :TMiniBufExplorer<cr>
 noremap <F7> :bp<cr>
 noremap <F8> :bn<cr>
-
-" folding
-"hi Folded guibg=red guifg=Red cterm=bold ctermbg=DarkGrey ctermfg=lightblue
-"hi FoldColumn guibg=grey78 gui=Bold guifg=DarkBlue
-set foldcolumn=2
-set foldclose=
-set foldmethod=syntax
-set foldnestmax=2
-set foldlevel=0
-set fillchars=vert:\|,fold:\
-set foldminlines=1
-fu! ToggleFold()
-  if foldlevel('.') == 0
-    normal! l
-  else
-    if foldclosed('.') < 0
-      . foldclose
-    else
-      . foldopen
-    endif
-  endif
-  echo
-endf
-noremap <space> :call ToggleFold()<CR>
