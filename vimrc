@@ -150,5 +150,5 @@ noremap <F7> :bp<cr>
 noremap <F8> :bn<cr>
 
 " run scripts
-autocmd BufRead,BufNewFile *.rb map <D-CR> :% w !ruby<CR>
-autocmd BufRead,BufNewFile *.py map <D-CR> :% w !python<CR>
+autocmd BufRead,BufNewFile *.rb map <c-CR> :% w !ruby<CR>
+autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
