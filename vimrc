@@ -99,6 +99,12 @@ map <S-Enter> o<Esc>
 " cancel searched highlight
 noremap ; :nohlsearch<cr>
 
+" identation
+nmap <tab> v>
+nmap <s-tab> v<
+vmap <tab> >gv
+vmap <s-tab> <gv
+
 " select ALL
 map <c-a> ggVG
 
