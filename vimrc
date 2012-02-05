@@ -17,6 +17,7 @@ set title
 set showmode
 set nobomb
 set nostartofline
+set laststatus=2
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -48,25 +49,6 @@ set visualbell
 set noerrorbells
 set t_vb=
 set tm=500
-
-set laststatus=2
-set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \
-set statusline+=\ \ \ [%{&ff}/%Y]
-set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\
-set statusline+=%=%-10.(%l,%c%V%)\ %p%%/%L
-
-function! CurDir()
-  let curdir = substitute(getcwd(), $HOME, "~", "")
-  return curdir
-endfunction
-
-function! HasPaste()
-  if &paste
-    return '[PASTE]'
-  else
-    return ''
-  endif
-endfunction
 
 set encoding=utf-8
 set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le
@@ -158,3 +140,6 @@ noremap <F8> :bn<cr>
 " run scripts
 autocmd BufRead,BufNewFile *.rb map <c-CR> :% w !ruby -w<CR>
 autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
+
+" vim-powerline
+let g:Powerline_symbols = 'fancy'
