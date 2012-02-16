@@ -40,6 +40,7 @@ if has("gui_macvim")
   set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico
   let g:CommandTAcceptSelectionMap = '<C-t>'
   let g:CommandTAcceptSelectionTabMap = '<CR>'
+  let g:CommandTMatchWindowAtTop = 1
 
   " ctags path
   let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
