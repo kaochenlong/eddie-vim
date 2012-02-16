@@ -9,7 +9,8 @@ if has("gui_macvim")
   set guifont=Monaco:h18
   colorscheme railscasts
   set transparency=2
-  set guioptions=aAce
+  "set guioptions=aAce
+  set guioptions=ce
   set clipboard+=unnamed
 
   " disable default menu hot key
