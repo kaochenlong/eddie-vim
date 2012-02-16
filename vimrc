@@ -91,8 +91,9 @@ vmap <s-tab> <gv
 map <c-a> ggVG
 
 " NERDTree
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-let NERDTreeShowBookmarks  = 1
+nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
+let NERDTreeShowBookmarks  = 0
+let g:nerdtree_tabs_open_on_console_startup = 1
 
 " comment
 map <Leader><Leader> <Leader>c<space>
@@ -125,17 +126,9 @@ map <silent> <c-\>b :FufBuffer<cr>
 nnoremap <silent> <F11> :YRShow<CR>
 let g:yankring_history_dir='/tmp'
 
-" mini buffer explorer
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 2
-let g:miniBufExplModSelTarget = 0
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplVSplit = 25
-let g:miniBufExplSplitBelow= 1
-noremap <F3> :TMiniBufExplorer<cr>
-noremap <F7> :bp<cr>
-noremap <F8> :bn<cr>
+" next and prev tab
+noremap <F7> gT
+noremap <F8> gt
 
 " run scripts
 autocmd BufRead,BufNewFile *.rb map <c-CR> :% w !ruby -w<CR>
