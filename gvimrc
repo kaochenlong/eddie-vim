@@ -35,8 +35,10 @@ if has("gui_macvim")
     exec "nnoremap <D-".i."> ".i."gt"
   endfor
 
-  " command-T
-  set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif
+  " command-t
+  set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico
+  let g:CommandTAcceptSelectionMap = '<C-t>'
+  let g:CommandTAcceptSelectionTabMap = '<CR>'
 
   " ctags path
   let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'

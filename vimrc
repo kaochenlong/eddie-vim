@@ -93,7 +93,7 @@ map <c-a> ggVG
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 let NERDTreeShowBookmarks  = 0
-let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_focus_on_files = 1
 
 " comment
 map <Leader><Leader> <Leader>c<space>
@@ -136,3 +136,7 @@ autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
 
 " vim-powerline
 let g:Powerline_symbols = 'fancy'
+
+" command-t
+let g:CommandTAcceptSelectionMap = '<C-t>'
+let g:CommandTAcceptSelectionTabMap = '<CR>'
