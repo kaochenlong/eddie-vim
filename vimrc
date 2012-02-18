@@ -39,7 +39,7 @@ set copyindent		" copy the previous indentation on autoindenting
 set ignorecase		" ignore case when searching
 set smartcase		"
 set smarttab		" insert tabs on the start of a line according to
-set expandtab        "replace <TAB> with spaces
+set expandtab           "replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
 au FileType Makefile set noexpandtab
