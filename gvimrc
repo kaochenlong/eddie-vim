@@ -8,10 +8,10 @@ if has("gui_macvim")
 
   set guifont=Monaco:h18
   colorscheme railscasts
-  set transparency=2
-  "set guioptions=aAce
+  set transparency=0
   set guioptions=ce
   set clipboard+=unnamed
+  set antialias
 
   " disable default menu hot key
   macmenu &File.New\ Tab key=<nop>

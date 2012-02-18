@@ -28,8 +28,9 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 syntax on		" syntax highlight
 set hlsearch		" search highlighting
 syntax enable
-set background=dark
-colorscheme railscasts
+"set background=dark
+colorscheme ir_black
+"colorscheme railscasts
 set t_Co=256
 
 set nobackup		" no *~ backup files
