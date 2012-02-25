@@ -37,7 +37,7 @@ if has("gui_macvim")
   endfor
 
   " command-t
-  set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico
+  set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*.mp3
   let g:CommandTAcceptSelectionMap = '<C-t>'
   let g:CommandTAcceptSelectionTabMap = '<CR>'
   let g:CommandTMatchWindowAtTop = 1

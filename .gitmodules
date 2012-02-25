@@ -64,3 +64,6 @@
 [submodule "bundle/haskell.vim"]
 	path = bundle/haskell.vim
 	url = git://github.com/vim-scripts/haskell.vim.git
+[submodule "bundle/vim-easygrep"]
+	path = bundle/vim-easygrep
+	url = git://github.com/vim-scripts/EasyGrep.git
