@@ -58,6 +58,7 @@ set fenc=utf-8 enc=utf-8 tenc=utf-8
 augroup filetypedetect
   au! BufNewFile,BufRead *.as  setf actionscript
   au! BufNewFile,BufRead *.m setf objc
+  au! BufNewFile,BufRead *.scss setf scss
 augroup END
 
 " for Tabularize

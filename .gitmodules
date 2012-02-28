@@ -67,3 +67,9 @@
 [submodule "bundle/vim-easygrep"]
 	path = bundle/vim-easygrep
 	url = git://github.com/vim-scripts/EasyGrep.git
+[submodule "bundle/vim-scss"]
+	path = bundle/vim-scss
+	url = git://github.com/cakebaker/scss-syntax.vim.git
+[submodule "bundle/vim-sass"]
+	path = bundle/vim-sass
+	url = git://github.com/tpope/vim-haml.git
