@@ -149,6 +149,9 @@ let g:EasyGrepMode = 2
 let g:EasyGrepIgnoreCase = 1
 let g:EasyGrepRecursive = 1
 
+" Ctgs
+set tags=./tags;/
+
 " QuickFix Window
 command -bang -nargs=? QFix call QFixToggle(<bang>0)
 function! QFixToggle(forced)
