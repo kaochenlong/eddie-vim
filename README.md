@@ -6,7 +6,7 @@ My own Vim configurations and modules which I used.
 2. `cd ~` to change directory to your home directory.
 3. copy files to your home directory:
 
-        git clone git://github.com/kaochenlong/eddie-vim.git    
+        git clone git://github.com/kaochenlong/eddie-vim.git
 
 4. change to `eddie-vim` directory and execute the `update.sh` to get latest version modules:
 

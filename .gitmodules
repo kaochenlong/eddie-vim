@@ -55,9 +55,6 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "bundle/tabular"]
-	path = bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = git://github.com/skammer/vim-css-color.git
@@ -76,3 +73,6 @@
 [submodule "bundle/vim-minitest"]
 	path = bundle/vim-minitest
 	url = git://github.com/sunaku/vim-ruby-minitest.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
