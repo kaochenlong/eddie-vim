@@ -73,3 +73,6 @@
 [submodule "bundle/vim-sass"]
 	path = bundle/vim-sass
 	url = git://github.com/tpope/vim-haml.git
+[submodule "bundle/vim-minitest"]
+	path = bundle/vim-minitest
+	url = git://github.com/sunaku/vim-ruby-minitest.git
