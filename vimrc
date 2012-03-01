@@ -84,6 +84,7 @@ map <c-a> ggVG
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 let NERDTreeShowBookmarks  = 0
 let g:nerdtree_tabs_focus_on_files = 1
+let g:nerdtree_tabs_open_on_gui_startup = 0
 map <leader>r :NERDTreeFind<cr>   " open directory of current opened file
 
 " comment

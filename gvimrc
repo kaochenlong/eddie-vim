@@ -6,8 +6,9 @@ if has("gui_macvim")
   vmap <D-j> :m'>+<cr>`<my`>mzgv`yo`z
   vmap <D-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-  set guifont=Monaco:h18
+  set guifont=Monaco:h17
   colorscheme railscasts
+  "colorscheme ir_black
   set transparency=0
   set guioptions=ce
   set clipboard+=unnamed
