@@ -7,7 +7,8 @@ if has("gui_macvim")
   vmap <D-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
   set guifont=Monaco:h17
-  colorscheme railscasts
+  "colorscheme railscasts
+  colorscheme rails_envy
   "colorscheme ir_black
   set transparency=0
   set guioptions=ce
