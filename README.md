@@ -29,6 +29,8 @@ My own Vim configurations and modules which I used.
         make
 for more information, please visit [Command-T](https://github.com/wincent/Command-T) on Github.
 
+8. if you use Powerline under Ubuntu or something which can not show the correct icon/font on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline).
+
 ### Update:
 just move to `.vim` directory and execute `./update.sh` script, it should do all the updates automatically.
 
