@@ -30,7 +30,6 @@ set hlsearch		" search highlighting
 syntax enable
 set t_Co=256
 "set background=dark
-"colorscheme ir_black
 colorscheme rails_envy
 "colorscheme railscasts
 
@@ -64,9 +63,9 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.scss setf scss
 augroup END
 
-" ===============================
-" custom key and plugin configurations
-" ===============================
+" ===================================
+"  custom key and plugin configurations
+" ===================================
 " add a new line without entering insert mode
 map <S-Enter> o<Esc>
 
@@ -131,17 +130,10 @@ autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
 " vim-powerline
 let g:Powerline_symbols = 'fancy'
 
-" command-t
-let g:CommandTAcceptSelectionMap = '<C-t>'
-let g:CommandTAcceptSelectionTabMap = '<CR>'
-
 " EasyGrep
 let g:EasyGrepMode = 2
 let g:EasyGrepIgnoreCase = 1
 let g:EasyGrepRecursive = 1
-
-" Ctgs
-set tags=./tags;/
 
 " QuickFix Window
 command -bang -nargs=? QFix call QFixToggle(<bang>0)
@@ -156,5 +148,6 @@ endif
 endfunction
 nnoremap <leader>q :QFix<CR>
 
-" Search tags in installed gems
+" Ctags
+set tags=./tags;/
 autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(pathogen#split(&tags) + map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
