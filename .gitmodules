@@ -57,7 +57,7 @@
 	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
-	url = git://github.com/skammer/vim-css-color.git
+	url = git://github.com/ap/vim-css-color.git
 [submodule "bundle/haskell.vim"]
 	path = bundle/haskell.vim
 	url = git://github.com/vim-scripts/haskell.vim.git
