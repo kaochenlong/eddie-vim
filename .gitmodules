@@ -1,6 +1,7 @@
 [submodule "bundle/cocoa.vim"]
 	path = bundle/cocoa.vim
 	url = git://github.com/msanders/cocoa.vim.git
+        ignore = untracked
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://github.com/wincent/Command-T.git
@@ -16,6 +17,7 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+        ignore = untracked
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -43,12 +45,14 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
+        ignore = untracked
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
 	url = git://github.com/vim-scripts/taglist.vim.git
+        ignore = untracked
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
@@ -61,6 +65,7 @@
 [submodule "bundle/vim-easygrep"]
 	path = bundle/vim-easygrep
 	url = git://github.com/vim-scripts/EasyGrep.git
+        ignore = untracked
 [submodule "bundle/vim-scss"]
 	path = bundle/vim-scss
 	url = git://github.com/cakebaker/scss-syntax.vim.git
@@ -73,3 +78,9 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = git://github.com/briancollins/vim-jst.git
