@@ -29,7 +29,7 @@ syntax on		" syntax highlight
 set hlsearch		" search highlighting
 syntax enable
 set t_Co=256
-"set background=dark
+set background=dark
 colorscheme rails_envy
 "colorscheme railscasts
 
@@ -67,7 +67,7 @@ augroup END
 "  custom key and plugin configurations
 " ===================================
 " add a new line without entering insert mode
-map <S-Enter> o<Esc>
+map <S-CR> o<Esc>
 
 " cancel searched highlight
 noremap ; :nohlsearch<cr>
@@ -98,7 +98,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:EasyMotion_leader_key = '<Leader>'
 
 " vimgrep
-map <leader>g :vimgrep //j **/*.*<left><left><left><left><left><left><left><left><left>
+"map <leader>g :vimgrep //j **/*.*<left><left><left><left><left><left><left><left><left>
 
 " remap VIM 0
 map 0 ^
@@ -161,3 +161,10 @@ let g:ctrlp_user_command = 'find %s -type f'
 "let g:ctrlp_prompt_mappings = { 'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
 let g:ctrlp_cache_dir = '/tmp/.cache/ctrlp'
 let g:ctrlp_mruf_include = '\.rb$'
+
+" fugitive
+nnoremap <silent> <leader>gs :Gstatus<CR>
+nnoremap <silent> <leader>gd :Gdiff<CR>
+nnoremap <silent> <leader>gc :Gcommit<CR>
+nnoremap <silent> <leader>gl :Glog<CR>
+nnoremap <silent> <leader>gp :Git push<CR>
