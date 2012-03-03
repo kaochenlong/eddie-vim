@@ -7,11 +7,9 @@ if has("gui_macvim")
   vmap <D-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
   set guifont=Monaco:h17
-  "colorscheme railscasts
   colorscheme rails_envy
   set transparency=0
   set guioptions=ce
-  set clipboard+=unnamed
   set antialias
 
   " disable default menu hot key
@@ -28,12 +26,8 @@ if has("gui_macvim")
   " remap cmd + n to new tab
   map <D-n> :tabnew<CR>
 
-  " change to NERDTree's root dir
-  "set autochdir
-  let NERDTreeChDirMode=2
-
-  " map cmd+1~20 to switch tab 1~20
-  for i in range(1, 20)
+  " map cmd+1~9 to switch tab 1~9
+  for i in range(1, 9)
     exec "nnoremap <D-".i."> ".i."gt"
   endfor
 

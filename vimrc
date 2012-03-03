@@ -18,6 +18,7 @@ set showmode
 set nobomb
 set nostartofline
 set laststatus=2
+set clipboard+=unnamed
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -84,6 +85,7 @@ map <c-a> ggVG
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 let NERDTreeShowBookmarks  = 0
+let NERDTreeChDirMode=2
 let g:nerdtree_tabs_focus_on_files = 1
 let g:nerdtree_tabs_open_on_gui_startup = 0
 map <leader>r :NERDTreeFind<cr>   " open directory of current opened file
@@ -130,11 +132,6 @@ autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
 " vim-powerline
 let g:Powerline_symbols = 'fancy'
 
-" EasyGrep
-"let g:EasyGrepMode = 2
-"let g:EasyGrepIgnoreCase = 1
-"let g:EasyGrepRecursive = 1
-
 " QuickFix Window
 command -bang -nargs=? QFix call QFixToggle(<bang>0)
 function! QFixToggle(forced)
@@ -158,7 +155,6 @@ set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_user_command = 'find %s -type f'
-"let g:ctrlp_prompt_mappings = { 'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
 let g:ctrlp_cache_dir = '/tmp/.cache/ctrlp'
 let g:ctrlp_mruf_include = '\.rb$'
 
