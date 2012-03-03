@@ -110,10 +110,10 @@ map <left> <nop>
 map <right> <nop>
 
 " fuzzyfinder
-map <silent> <c-\>f :FufCoverageFile<cr>
+"map <silent> <c-\>f :FufCoverageFile<cr>
 "map <silent> <c-\>f :FufFile<cr>
-map <silent> <c-\>d :FufDir<cr>
-map <silent> <c-\>b :FufBuffer<cr>
+"map <silent> <c-\>d :FufDir<cr>
+"map <silent> <c-\>b :FufBuffer<cr>
 
 " Yankring
 nnoremap <silent> <F11> :YRShow<CR>
@@ -131,9 +131,9 @@ autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
 let g:Powerline_symbols = 'fancy'
 
 " EasyGrep
-let g:EasyGrepMode = 2
-let g:EasyGrepIgnoreCase = 1
-let g:EasyGrepRecursive = 1
+"let g:EasyGrepMode = 2
+"let g:EasyGrepIgnoreCase = 1
+"let g:EasyGrepRecursive = 1
 
 " QuickFix Window
 command -bang -nargs=? QFix call QFixToggle(<bang>0)
@@ -151,3 +151,13 @@ nnoremap <leader>q :QFix<CR>
 " Ctags
 set tags=./tags;/
 autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(pathogen#split(&tags) + map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
+
+" ctrlp
+nnoremap <leader>p :CtrlP<CR>
+set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*.mp3
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_user_command = 'find %s -type f'
+"let g:ctrlp_prompt_mappings = { 'AcceptSelection("e")': [], 'AcceptSelection("t")': ['<cr>', '<c-m>'], }
+let g:ctrlp_cache_dir = '/tmp/.cache/ctrlp'
+let g:ctrlp_mruf_include = '\.rb$'

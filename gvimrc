@@ -9,19 +9,18 @@ if has("gui_macvim")
   set guifont=Monaco:h17
   "colorscheme railscasts
   colorscheme rails_envy
-  "colorscheme ir_black
   set transparency=0
   set guioptions=ce
   set clipboard+=unnamed
   set antialias
 
   " disable default menu hot key
-  macmenu &File.New\ Tab key=<nop>
+  "macmenu &File.New\ Tab key=<nop>
   macmenu &File.New\ Window key=<nop>
   macmenu &File.Close key=<nop>
 
   " remap cmd + t to command-t
-  map <D-t> :CommandT<CR>
+  "map <D-t> :CommandT<CR>
 
   " remap cmd + w to close tab
   map <D-w> :tabclose<CR>
@@ -39,10 +38,10 @@ if has("gui_macvim")
   endfor
 
   " command-t
-  set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*.mp3
-  let g:CommandTAcceptSelectionMap = '<C-t>'
-  let g:CommandTAcceptSelectionTabMap = '<CR>'
-  let g:CommandTMatchWindowAtTop = 1
+  "set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*.mp3
+  "let g:CommandTAcceptSelectionMap = '<C-t>'
+  "let g:CommandTAcceptSelectionTabMap = '<CR>'
+  "let g:CommandTMatchWindowAtTop = 1
 
   " ctags path
   let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8/bin/ctags'
