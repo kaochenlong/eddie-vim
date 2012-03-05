@@ -3,12 +3,14 @@ My own Vim configurations and modules which I used.
 ## Usage
 ### Install:
 1. BACKUP your `.vim` directory and `.vimrc` first.
+
 2. `cd ~` to change directory to your home directory.
+
 3. copy files to your home directory:
 
         git clone git://github.com/kaochenlong/eddie-vim.git
 
-4. change to `eddie-vim` directory and execute the `update.sh` to get latest version modules:
+4. cd to `eddie-vim` directory and execute the `update.sh` to get latest version modules:
 
         cd eddie-vim
         ./update.sh
@@ -31,6 +33,8 @@ just move to `.vim` directory and execute `./update.sh` script, it should do all
 if you can not found `ctags` command, just find your ctags path and add to your `.vimrc` or `.gvimrc`:
 
     let Tlist_Ctags_Cmd = '/your/path/to/ctags'
+
+and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
 
 ## Contact
 any question or comment, feel free to let me know :)
