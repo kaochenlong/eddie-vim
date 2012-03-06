@@ -99,23 +99,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 " easy motion
 let g:EasyMotion_leader_key = '<Leader>'
 
-" vimgrep
-"map <leader>g :vimgrep //j **/*.*<left><left><left><left><left><left><left><left><left>
-
 " remap VIM 0
 map 0 ^
-
-" force myself to not to use the error keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" fuzzyfinder
-"map <silent> <c-\>f :FufCoverageFile<cr>
-"map <silent> <c-\>f :FufFile<cr>
-"map <silent> <c-\>d :FufDir<cr>
-"map <silent> <c-\>b :FufBuffer<cr>
 
 " Yankring
 nnoremap <silent> <F11> :YRShow<CR>
