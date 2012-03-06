@@ -19,6 +19,7 @@ set nobomb
 set nostartofline
 set laststatus=2
 set clipboard+=unnamed
+set mousehide=on
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting

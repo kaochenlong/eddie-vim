@@ -1,4 +1,4 @@
-My own Vim configurations and modules which I used.
+My own Vim configurations and modules which I used. and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> is my current screenshot of vim.
 
 ## Usage
 ### Install:
