@@ -3,7 +3,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible	" not compatible with the old-fashion vi mode
-set bs=2		" allow backspacing over everything in insert mode
+set backspace=2		" allow backspacing over everything in insert mode
 set history=50		" keep 50 lines of command line history
 set undolevels=100
 set ruler		" show the cursor position all the time
@@ -32,7 +32,6 @@ syntax enable
 set t_Co=256
 set background=dark
 colorscheme rails_envy
-"colorscheme railscasts
 
 set nobackup		" no *~ backup files
 set noswapfile

@@ -15,19 +15,26 @@ My own Vim configurations and modules which I used. and <a href="http://blog.edd
         cd eddie-vim
         ./update.sh
 
-5. link `.vim` and `.vimrc`
+5. make a symbolic link `.vim` to `eddie-vim` that you just cloned, or just rename it to `.vim` also be fine:
 
         ln -s eddie-vim .vim
-        ln -s eddie-vim/vimrc .vimrc
 
-6. if you use GUI version VIM, such as MacVim, you can also link to `.gvimrc`:
+6. link the vimrc to
+
+        ln -s .vim/vimrc .vimrc
+
+7. if you're still not familiar with the movement in vim by HJKL, maybe you can try the easier version:
+
+        ln -s .vim/easy-vimrc .vimrc
+
+8. if you use GUI version VIM, such as MacVim, you can also link to `.gvimrc`:
 
         ln -s eddie-vim/gvimrc .gvimrc
 
-7. if you use Powerline under Ubuntu or something which can not show the correct icon/font on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline).
+9. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
 
 ### Update:
-just move to `.vim` directory and execute `./update.sh` script, it should do all the updates automatically.
+just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
 ## FAQ
 if you can not found `ctags` command, just find your ctags path and add to your `.vimrc` or `.gvimrc`:

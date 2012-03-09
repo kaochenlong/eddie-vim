@@ -3,7 +3,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible	" not compatible with the old-fashion vi mode
-set bs=2		" allow backspacing over everything in insert mode
+set backspace=2		" allow backspacing over everything in insert mode
 set history=50		" keep 50 lines of command line history
 set undolevels=100
 set ruler		" show the cursor position all the time
@@ -32,7 +32,6 @@ syntax enable
 set t_Co=256
 set background=dark
 colorscheme rails_envy
-"colorscheme railscasts
 
 set nobackup		" no *~ backup files
 set noswapfile
@@ -64,9 +63,9 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.scss setf scss
 augroup END
 
-" ===================================
+" ======================================
 "  custom key and plugin configurations
-" ===================================
+" ======================================
 " add a new line without entering insert mode
 map <S-CR> o<Esc>
 
@@ -99,9 +98,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 " easy motion
 let g:EasyMotion_leader_key = '<Leader>'
 
-" vimgrep
-"map <leader>g :vimgrep //j **/*.*<left><left><left><left><left><left><left><left><left>
-
 " remap VIM 0
 map 0 ^
 
@@ -110,12 +106,6 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-
-" fuzzyfinder
-"map <silent> <c-\>f :FufCoverageFile<cr>
-"map <silent> <c-\>f :FufFile<cr>
-"map <silent> <c-\>d :FufDir<cr>
-"map <silent> <c-\>b :FufBuffer<cr>
 
 " Yankring
 nnoremap <silent> <F11> :YRShow<CR>
