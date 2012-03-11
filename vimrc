@@ -3,8 +3,9 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible	" not compatible with the old-fashion vi mode
-set backspace=2		" allow backspacing over everything in insert mode
-set history=50		" keep 50 lines of command line history
+set backspace=2	" allow backspacing over everything in insert mode
+set history=50	" keep 50 lines of command line history
+
 set undolevels=100
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
@@ -38,13 +39,13 @@ set noswapfile
 set nowb
 set copyindent		" copy the previous indentation on autoindenting
 set ignorecase		" ignore case when searching
-set smartcase		"
+set smartcase
 set smarttab		" insert tabs on the start of a line according to
 set expandtab           " replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
 au FileType Makefile set noexpandtab
-set shortmess=I         " remove splash wording
+set shortmess=I       " remove splash wording
 
 " disable sound on errors
 set visualbell
@@ -67,7 +68,9 @@ augroup END
 "  custom key and plugin configurations
 " ======================================
 " add a new line without entering insert mode
-map <S-CR> o<Esc>
+"map <S-CR> o<Esc>            " for GUI Vim
+"map <leader><CR> o<Esc>      " for non-GUI Vim
+noremap <CR> o<Esc>
 
 " cancel searched highlight
 noremap ; :nohlsearch<cr>
@@ -83,11 +86,12 @@ map <c-a> ggVG
 
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-let NERDTreeShowBookmarks  = 0
+let NERDTreeShowBookmarks=0
 let NERDTreeChDirMode=2
-let g:nerdtree_tabs_focus_on_files = 1
-let g:nerdtree_tabs_open_on_gui_startup = 0
-map <leader>r :NERDTreeFind<cr>   " open directory of current opened file
+let g:nerdtree_tabs_focus_on_files=1
+let g:nerdtree_tabs_open_on_gui_startup=0
+" open directory of current opened file
+map <leader>r :NERDTreeFind<cr>
 
 " comment
 map <Leader><Leader> <Leader>c<space>
@@ -96,7 +100,7 @@ map <Leader><Leader> <Leader>c<space>
 autocmd BufWritePre * :%s/\s\+$//e
 
 " easy motion
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key='<Leader>'
 
 " remap VIM 0
 map 0 ^
@@ -115,12 +119,16 @@ let g:yankring_history_dir='/tmp'
 noremap <F7> gT
 noremap <F8> gt
 
-" run scripts
-autocmd BufRead,BufNewFile *.rb map <c-CR> :% w !ruby -w<CR>
-autocmd BufRead,BufNewFile *.py map <c-CR> :% w !python<CR>
+" run scripts, for non-GUI Vim
+autocmd BufRead,BufNewFile *.rb map <leader>0 :% w !ruby -w<CR>
+autocmd BufRead,BufNewFile *.py map <leader>0 :% w !python<CR>
+
+" run scripts, for GUI Vim
+autocmd BufRead,BufNewFile *.rb map <C-CR> :% w !ruby -w<CR>
+autocmd BufRead,BufNewFile *.py map <C-CR> :% w !python<CR>
 
 " vim-powerline
-let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols='fancy'
 
 " QuickFix Window
 command -bang -nargs=? QFix call QFixToggle(<bang>0)
@@ -130,7 +138,7 @@ if exists("g:qfix_win") && a:forced == 0
   unlet g:qfix_win
 else
   copen 10
-  let g:qfix_win = bufnr("$")
+  let g:qfix_win=bufnr("$")
 endif
 endfunction
 nnoremap <leader>q :QFix<CR>
@@ -143,11 +151,11 @@ autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(pathogen#s
 " ctrlp
 nnoremap <leader>p :CtrlP<CR>
 set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*.mp3
-let g:ctrlp_working_path_mode = 2
-let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_user_command = 'find %s -type f'
-let g:ctrlp_cache_dir = '/tmp/.cache/ctrlp'
-let g:ctrlp_mruf_include = '\.rb$'
+let g:ctrlp_working_path_mode=2
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_user_command='find %s -type f'
+let g:ctrlp_cache_dir='/tmp/.cache/ctrlp'
+let g:ctrlp_mruf_include='\.rb$'
 
 " fugitive
 nnoremap <silent> <leader>gs :Gstatus<CR>
