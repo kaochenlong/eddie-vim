@@ -67,8 +67,7 @@ augroup END
 "  custom key and plugin configurations
 " ===================================
 " add a new line without entering insert mode
-"map <S-CR> o<Esc>
-noremap <CR> o<Esc>
+map <S-CR> o<Esc>
 
 " cancel searched highlight
 noremap ; :nohlsearch<cr>
