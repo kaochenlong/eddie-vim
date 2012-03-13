@@ -2,13 +2,12 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 call pathogen#helptags()
 
-set nocompatible	" not compatible with the old-fashion vi mode
-set backspace=2	" allow backspacing over everything in insert nc >kkmode
-set history=50	" keep 50 lines of command line history
-
+set nocompatible                   " not compatible with the old-fashion vi mode
+set backspace=2	                   " allow backspacing over everything in insert nc >kkmode
+set history=50	                   " keep 50 lines of command line history
 set undolevels=100
-set ruler		" show the cursor position all the time
-set autoread		" auto read when file is changed from outside
+set ruler		           " show the cursor position all the time
+set autoread                       " auto read when file is changed from outside
 set linespace=0
 set cursorline
 set nofoldenable
@@ -20,34 +19,33 @@ set nobomb
 set nostartofline
 set laststatus=2
 set clipboard+=unnamed
-set splitright " always open vertical split window in the right side
-set splitbelow " always open horizontal split window below
+set splitright                     " always open vertical split window in the right side
+set splitbelow                     " always open horizontal split window below
+set scrolloff=3                    " start scrolling when n lines away from margins
 
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
+filetype on                        " enable filetype detection
+filetype indent on                 " enable filetype-specific indenting
+filetype plugin on                 " enable filetype-specific plugins
 
-autocmd! bufwritepost .vimrc source ~/.vimrc
-
-syntax on		" syntax highlight
-set hlsearch		" search highlighting
+syntax on                          " syntax highlight
+set hlsearch                       " search highlighting
 syntax enable
 set t_Co=256
 set background=dark
 colorscheme rails_envy
 
-set nobackup		" no *~ backup files
+set nobackup                       " no *~ backup files
 set noswapfile
 set nowb
-set copyindent		" copy the previous indentation on autoindenting
-set ignorecase		" ignore case when searching
+set copyindent                     " copy the previous indentation on autoindenting
+set ignorecase                     " ignore case when searching
 set smartcase
-set smarttab		" insert tabs on the start of a line according to
-set expandtab           " replace <TAB> with spaces
+set smarttab                       " insert tabs on the start of a line according to
+set expandtab                      " replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
 au FileType Makefile set noexpandtab
-set shortmess=I       " remove splash wording
+set shortmess=I                    " remove splash wording
 
 " disable sound on errors
 set visualbell
@@ -70,8 +68,8 @@ augroup END
 "  custom key and plugin configurations
 " ======================================
 " add a new line without entering insert mode
-"map <S-CR> o<Esc>            " for GUI Vim
-"map <leader><CR> o<Esc>      " for non-GUI Vim
+" map <S-CR> o<Esc>            " for GUI Vim
+" map <leader><CR> o<Esc>      " for non-GUI Vim
 noremap <CR> o<Esc>
 
 " cancel searched highlight
@@ -145,19 +143,29 @@ endif
 endfunction
 nnoremap <leader>q :QFix<CR>
 
-" Ctags
+" ctags
 set tags+=./tags;/
 set tags+=gems.tags
 autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(pathogen#split(&tags) + map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
 
 " ctrlp
 nnoremap <leader>p :CtrlP<CR>
-set wildignore+=*.o,*.obj,.git,*.pyc,*.jpg,*.png,*.gif,*.swf,*.fla,*.ico,*.avi,*.mp3
 let g:ctrlp_working_path_mode=2
 let g:ctrlp_match_window_reversed=0
 let g:ctrlp_user_command='find %s -type f'
 let g:ctrlp_cache_dir='/tmp/.cache/ctrlp'
 let g:ctrlp_mruf_include='\.rb$'
+
+" ignores
+set wildignore+=*.o,*.obj,*.pyc,               " output objects
+set wildignore+=*.png,*.jpg,*.gif,*.ico        " image format
+set wildignore+=*.swf,*.fla                    " image format
+set wildignore+=*.mp3,*.mp4,*.avi,*.mkv        " media format
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=*.gem
+set wildignore+=*log/**
+set wildignore+=*tmp/**
 
 " fugitive
 nnoremap <silent> <leader>gs :Gstatus<CR>
@@ -177,5 +185,3 @@ if bufwinnr(1)
   map <C-W>. :vertical resize +30<CR>
   map <C-W>, :vertical resize -30<CR>
 endif
-
-
