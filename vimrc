@@ -46,8 +46,6 @@ set softtabstop=2
 set shiftwidth=2
 au FileType Makefile set noexpandtab
 set shortmess=I                    " remove splash wording
-set undodir=~/.vim/backup
-set undofile
 
 " disable sound on errors
 set visualbell
