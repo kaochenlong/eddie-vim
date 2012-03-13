@@ -32,9 +32,7 @@ set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
 set t_Co=256
-set background=dark
 colorscheme rails_envy
-set list listchars=tab:▸\ ,trail:·    " show invsible chars
 
 set nobackup                          " no *~ backup files
 set noswapfile
@@ -42,8 +40,6 @@ set nowb
 set copyindent                        " copy the previous indentation on autoindenting
 set ignorecase                        " ignore case when searching
 set smartcase
-set smartindent
-set autoindent
 set smarttab                          " insert tabs on the start of a line according to
 set expandtab                         " replace <TAB> with spaces
 set softtabstop=2
@@ -114,9 +110,6 @@ autocmd BufRead,BufNewFile *.py map <leader>0 :% w !python<CR>
 " run scripts, for GUI Vim
 autocmd BufRead,BufNewFile *.rb map <C-CR> :% w !ruby -w<CR>
 autocmd BufRead,BufNewFile *.py map <C-CR> :% w !python<CR>
-
-" vim-powerline
-let g:Powerline_symbols='unicode'
 
 " ignores
 set wildignore+=*.o,*.obj,*.pyc                " output objects
