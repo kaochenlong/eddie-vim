@@ -172,10 +172,10 @@ cmap Tabe tabe
 
 " split window resize
 if bufwinnr(1)
-  map = <C-W>+<C-W>+
-  map - <C-W>-<C-W>-
-  map <C-W>. :vertical resize +30<cr>
-  map <C-W>, :vertical resize -30<cr>
+  map = :resize +10<CR>
+  map - :resize -10<CR>
+  map <C-W>. :vertical resize +30<CR>
+  map <C-W>, :vertical resize -30<CR>
 endif
 
 
