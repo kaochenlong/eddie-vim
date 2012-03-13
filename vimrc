@@ -20,6 +20,8 @@ set nobomb
 set nostartofline
 set laststatus=2
 set clipboard+=unnamed
+set splitright " always open vertical split window in the right side
+set splitbelow " always open horizontal split window below
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -175,3 +177,5 @@ if bufwinnr(1)
   map <C-W>. :vertical resize +30<cr>
   map <C-W>, :vertical resize -30<cr>
 endif
+
+
