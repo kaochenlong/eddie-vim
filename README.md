@@ -1,5 +1,7 @@
 My own Vim configurations and modules which I used. and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> is my current screenshot of vim.
 
+Primary and Vim relative settings are all in vimrc, and plugins' I isolate them to `plugin/settings` directory.
+
 ## Usage
 ### Install:
 1. BACKUP your `.vim` directory and `.vimrc` first.
@@ -37,7 +39,7 @@ My own Vim configurations and modules which I used. and <a href="http://blog.edd
 just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
 ## FAQ
-if you can not found `ctags` command, just find your ctags path and add to your `.vimrc` or `.gvimrc`:
+if you can not found `ctags` command, just find your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
 
     let Tlist_Ctags_Cmd = '/your/path/to/ctags'
 

@@ -2,12 +2,12 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 call pathogen#helptags()
 
-set nocompatible                   " not compatible with the old-fashion vi mode
-set backspace=2	                   " allow backspacing over everything in insert nc >kkmode
-set history=50	                   " keep 50 lines of command line history
+set nocompatible                      " not compatible with the old-fashion vi mode
+set backspace=2                       " allow backspacing over everything in insert nc >kkmode
+set history=50                        " keep 50 lines of command line history
 set undolevels=100
-set ruler		           " show the cursor position all the time
-set autoread                       " auto read when file is changed from outside
+set ruler                             " show the cursor position all the time
+set autoread                          " auto read when file is changed from outside
 set linespace=0
 set cursorline
 set nofoldenable
@@ -19,33 +19,37 @@ set nobomb
 set nostartofline
 set laststatus=2
 set clipboard+=unnamed
-set splitright                     " always open vertical split window in the right side
-set splitbelow                     " always open horizontal split window below
-set scrolloff=3                    " start scrolling when n lines away from margins
+set splitright                        " always open vertical split window in the right side
+set splitbelow                        " always open horizontal split window below
+set scrolloff=3                       " start scrolling when n lines away from margins
 
-filetype on                        " enable filetype detection
-filetype indent on                 " enable filetype-specific indenting
-filetype plugin on                 " enable filetype-specific plugins
+filetype on                           " enable filetype detection
+filetype indent on                    " enable filetype-specific indenting
+filetype plugin on                    " enable filetype-specific plugins
 
-syntax on                          " syntax highlight
-set hlsearch                       " search highlighting
+syntax on                             " syntax highlight
+set hlsearch                          " search highlighting
+set incsearch                         " incremental search
 syntax enable
 set t_Co=256
 set background=dark
 colorscheme rails_envy
+set list listchars=tab:▸\ ,trail:·    " show invsible chars
 
-set nobackup                       " no *~ backup files
+set nobackup                          " no *~ backup files
 set noswapfile
 set nowb
-set copyindent                     " copy the previous indentation on autoindenting
-set ignorecase                     " ignore case when searching
+set copyindent                        " copy the previous indentation on autoindenting
+set ignorecase                        " ignore case when searching
 set smartcase
-set smarttab                       " insert tabs on the start of a line according to
-set expandtab                      " replace <TAB> with spaces
+set smartindent
+set autoindent
+set smarttab                          " insert tabs on the start of a line according to
+set expandtab                         " replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
 au FileType Makefile set noexpandtab
-set shortmess=I                    " remove splash wording
+set shortmess=I                       " remove splash wording
 
 " disable sound on errors
 set visualbell
@@ -70,7 +74,7 @@ augroup END
 " add a new line without entering insert mode
 " map <S-CR> o<Esc>            " for GUI Vim
 " map <leader><CR> o<Esc>      " for non-GUI Vim
-noremap <CR> o<Esc>
+" noremap <CR> o<Esc>
 
 " cancel searched highlight
 noremap ; :nohlsearch<cr>
@@ -84,23 +88,11 @@ vmap <s-tab> <gv
 " select ALL
 map <c-a> ggVG
 
-" NERDTree
-nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
-let NERDTreeShowBookmarks=0
-let NERDTreeChDirMode=2
-let g:nerdtree_tabs_focus_on_files=1
-let g:nerdtree_tabs_open_on_gui_startup=0
-" open directory of current opened file
-map <leader>r :NERDTreeFind<cr>
-
 " comment
 map <Leader><Leader> <Leader>c<space>
 
 " remove tailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-" easy motion
-let g:EasyMotion_leader_key='<Leader>'
 
 " remap VIM 0
 map 0 ^
@@ -110,10 +102,6 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-
-" Yankring
-nnoremap <silent> <F11> :YRShow<CR>
-let g:yankring_history_dir='/tmp'
 
 " next and prev tab
 noremap <F7> gT
@@ -128,33 +116,7 @@ autocmd BufRead,BufNewFile *.rb map <C-CR> :% w !ruby -w<CR>
 autocmd BufRead,BufNewFile *.py map <C-CR> :% w !python<CR>
 
 " vim-powerline
-let g:Powerline_symbols='fancy'
-
-" QuickFix Window
-command -bang -nargs=? QFix call QFixToggle(<bang>0)
-function! QFixToggle(forced)
-if exists("g:qfix_win") && a:forced == 0
-  cclose
-  unlet g:qfix_win
-else
-  copen 10
-  let g:qfix_win=bufnr("$")
-endif
-endfunction
-nnoremap <leader>q :QFix<CR>
-
-" ctags
-set tags+=./tags;/
-set tags+=gems.tags
-autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(pathogen#split(&tags) + map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
-
-" ctrlp
-nnoremap <leader>p :CtrlP<CR>
-let g:ctrlp_working_path_mode=2
-let g:ctrlp_match_window_reversed=0
-let g:ctrlp_user_command='find %s -type f'
-let g:ctrlp_cache_dir='/tmp/.cache/ctrlp'
-let g:ctrlp_mruf_include='\.rb$'
+let g:Powerline_symbols='unicode'
 
 " ignores
 set wildignore+=*.o,*.obj,*.pyc                " output objects
@@ -167,21 +129,6 @@ set wildignore+=*.gem
 set wildignore+=*log/**
 set wildignore+=*tmp/**
 
-" fugitive
-nnoremap <silent> <leader>gs :Gstatus<CR>
-nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
-nnoremap <silent> <leader>gl :Glog<CR>
-nnoremap <silent> <leader>gp :Git push<CR>
-
-" stupid shift key fixes
-cmap E e
-cmap Tabe tabe
-
-" split window resize
-if bufwinnr(1)
-  map <C-W>0 :resize +10<CR>
-  map <C-W>9 :resize -10<CR>
-  map <C-W>. :vertical resize +30<CR>
-  map <C-W>, :vertical resize -30<CR>
-endif
+" cursorline switched while focus is switched to another split window
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline

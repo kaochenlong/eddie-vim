@@ -26,7 +26,6 @@ hi IncSearch ctermfg=NONE ctermbg=248 cterm=NONE guifg=NONE guibg=#a6a6ab gui=NO
 hi Search ctermfg=NONE ctermbg=248 cterm=NONE guifg=NONE guibg=#a6a6ab gui=NONE
 hi Directory ctermfg=126 ctermbg=NONE cterm=NONE guifg=#aa2c8c guibg=NONE gui=NONE
 hi Folded ctermfg=102 ctermbg=231 cterm=NONE guifg=#999988 guibg=#f8f8ff gui=NONE
-
 hi Normal ctermfg=0 ctermbg=231 cterm=NONE guifg=#000000 guibg=#f8f8ff gui=NONE
 hi Boolean ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi Character ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -41,7 +40,8 @@ hi Function ctermfg=88 ctermbg=NONE cterm=bold guifg=#990000 guibg=NONE gui=bold
 hi Identifier ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi Keyword ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi Label ctermfg=161 ctermbg=NONE cterm=NONE guifg=#dd1144 guibg=NONE gui=NONE
-hi NonText ctermfg=250 ctermbg=189 cterm=NONE guifg=#bfbfbf guibg=#ececf2 gui=NONE
+"hi NonText ctermfg=250 ctermbg=189 cterm=NONE guifg=#bfbfbf guibg=#ececf2 gui=NONE
+hi NonText ctermfg=189 ctermbg=189 cterm=NONE guifg=#ececf2 guibg=#ececf2 gui=NONE
 hi Number ctermfg=30 ctermbg=NONE cterm=NONE guifg=#009999 guibg=NONE gui=NONE
 hi Operator ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi PreProc ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold

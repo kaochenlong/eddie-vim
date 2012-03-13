@@ -26,7 +26,6 @@ hi IncSearch ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#654932 gui=NON
 hi Search ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#654932 gui=NONE
 hi Directory ctermfg=73 ctermbg=NONE cterm=NONE guifg=#6d9cbe guibg=NONE gui=NONE
 hi Folded ctermfg=137 ctermbg=236 cterm=NONE guifg=#bc9458 guibg=#323232 gui=NONE
-
 hi Normal ctermfg=188 ctermbg=236 cterm=NONE guifg=#e6e1dc guibg=#323232 gui=NONE
 hi Boolean ctermfg=73 ctermbg=NONE cterm=NONE guifg=#6e9cbe guibg=NONE gui=NONE
 hi Character ctermfg=73 ctermbg=NONE cterm=NONE guifg=#6d9cbe guibg=NONE gui=NONE
@@ -41,7 +40,8 @@ hi Function ctermfg=221 ctermbg=NONE cterm=NONE guifg=#ffc66d guibg=NONE gui=NON
 hi Identifier ctermfg=173 ctermbg=NONE cterm=NONE guifg=#cc7833 guibg=NONE gui=NONE
 hi Keyword ctermfg=173 ctermbg=NONE cterm=NONE guifg=#cc7833 guibg=NONE gui=NONE
 hi Label ctermfg=143 ctermbg=NONE cterm=NONE guifg=#a5c261 guibg=NONE gui=NONE
-hi NonText ctermfg=238 ctermbg=237 cterm=NONE guifg=#404040 guibg=#3b3b3b gui=NONE
+"hi NonText ctermfg=238 ctermbg=237 cterm=NONE guifg=#404040 guibg=#3b3b3b gui=NONE
+hi NonText ctermfg=237 ctermbg=237 cterm=NONE guifg=#3b3b3b guibg=#3b3b3b gui=NONE
 hi Number ctermfg=143 ctermbg=NONE cterm=NONE guifg=#a5c261 guibg=NONE gui=NONE
 hi Operator ctermfg=173 ctermbg=NONE cterm=NONE guifg=#cc7833 guibg=NONE gui=NONE
 hi PreProc ctermfg=173 ctermbg=NONE cterm=NONE guifg=#cc7833 guibg=NONE gui=NONE
@@ -101,4 +101,3 @@ hi cssClassName ctermfg=179 ctermbg=NONE cterm=NONE guifg=#e8bf6a guibg=NONE gui
 hi cssValueLength ctermfg=143 ctermbg=NONE cterm=NONE guifg=#a5c261 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=143 ctermbg=NONE cterm=NONE guifg=#a5c261 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-
