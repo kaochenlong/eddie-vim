@@ -145,7 +145,7 @@ let g:ctrlp_cache_dir = '/tmp/.cache/ctrlp'
 let g:ctrlp_mruf_include = '\.rb$'
 
 " ignores
-set wildignore+=*.o,*.obj,*.pyc,               " output objects
+set wildignore+=*.o,*.obj,*.pyc                " output objects
 set wildignore+=*.png,*.jpg,*.gif,*.ico        " image format
 set wildignore+=*.swf,*.fla                    " image format
 set wildignore+=*.mp3,*.mp4,*.avi,*.mkv        " media format
