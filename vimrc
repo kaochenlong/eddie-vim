@@ -3,7 +3,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible	" not compatible with the old-fashion vi mode
-set backspace=2	" allow backspacing over everything in insert mode
+set backspace=2	" allow backspacing over everything in insert nc >kkmode
 set history=50	" keep 50 lines of command line history
 
 set undolevels=100
@@ -167,3 +167,11 @@ nnoremap <silent> <leader>gp :Git push<CR>
 " stupid shift key fixes
 cmap E e
 cmap Tabe tabe
+
+" split window resize
+if bufwinnr(1)
+  map = <C-W>+<C-W>+
+  map - <C-W>-<C-W>-
+  map <C-W>. :vertical resize +30<cr>
+  map <C-W>, :vertical resize -30<cr>
+endif
