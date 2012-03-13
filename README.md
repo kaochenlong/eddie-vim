@@ -38,6 +38,10 @@ Primary and Vim relative settings are all in vimrc, and plugins' I isolate them 
 ### Update:
 just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
+### Features:
+
+1. Toggle between working mode and presentation mode by `<leader>z`.
+
 ## FAQ
 if you can not found `ctags` command, just find your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
 
