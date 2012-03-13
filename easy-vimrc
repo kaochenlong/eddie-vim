@@ -71,6 +71,9 @@ augroup END
 "map <S-CR> o<Esc>
 noremap <CR> o<Esc>
 
+" map backspce to delete a character
+noremap <BS> X
+
 " cancel searched highlight
 noremap ; :nohlsearch<cr>
 
