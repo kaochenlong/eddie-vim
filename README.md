@@ -35,6 +35,8 @@ Primary and Vim relative settings are in `plugin/settings/Vimrc.vim`, and isolat
 
 9. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
 
+10. you may need to install `ack` first if you use `ack.vim`.
+
 ### Update:
 just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
