@@ -1,15 +1,13 @@
+" toggle between working mode and presentation mode
+" borrow from skalnik(https://github.com/skalnik)
 function! PresentationModeOn()
   colorscheme github
-  set bg=light
-
-  set guifont=Monaco:h25
+  set guifont=Monaco:h25                 " work for GUI-Vim only
 endfunction
 
 function! PresentationModeOff()
   colorscheme rails_envy
-  set bg=dark
-
-  set guifont=Monaco:h17
+  set guifont=Monaco:h17                 " work for GUI-Vim only
 endfunction
 
 function! TogglePresentationMode()
