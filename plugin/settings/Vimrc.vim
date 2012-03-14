@@ -49,6 +49,7 @@ set noerrorbells
 set t_vb=
 set tm=500
 
+" file encoding
 set encoding=utf-8
 set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le
 set fenc=utf-8 enc=utf-8 tenc=utf-8
@@ -81,6 +82,7 @@ set wildignore+=*tmp/**
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
+" file type auto detect
 augroup filetypedetect
   au! BufNewFile,BufRead *.as setf actionscript
   au! BufNewFile,BufRead *.m setf objc
@@ -100,7 +102,7 @@ vmap <TAB> >gv
 vmap <S-TAB> <gv
 
 " select ALL
-map <C-a> ggVG
+map <C-A> ggVG
 
 " comment
 map <Leader><Leader> <Leader>c<space>
