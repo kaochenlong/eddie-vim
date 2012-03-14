@@ -75,8 +75,8 @@ set wildignore+=*.mp3,*.mp4,*.avi,*.mkv        " media format
 set wildignore+=*.git*,*.hg*,*.svn*            " version control system
 set wildignore+=*sass-cache*
 set wildignore+=*.DS_Store
-set wildignore+=*log/**
-set wildignore+=*tmp/**
+set wildignore+=log/**
+set wildignore+=tmp/**
 
 " cursorline switched while focus is switched to another split window
 autocmd WinEnter * setlocal cursorline
