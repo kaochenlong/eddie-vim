@@ -2,12 +2,13 @@ set guioptions=ce
 set antialias
 colorscheme rails_envy
 
-if has("gui_gtk")
+if has("gui_macvim")
+  set guifont=Monaco:h17
+elseif has("gui_gtk")
   set guifont=Monospace\ 14
 end
 
 if has("gui_macvim")
-  set guifont=Monaco:h17
   set transparency=0
 
   "Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
