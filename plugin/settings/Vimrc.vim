@@ -63,14 +63,6 @@ scriptencoding utf-8
 noremap <F7> gT
 noremap <F8> gt
 
-" run scripts, for non-GUI Vim
-autocmd BufRead,BufNewFile *.rb map <leader>0 :% w !ruby -w<CR>
-autocmd BufRead,BufNewFile *.py map <leader>0 :% w !python<CR>
-
-" run scripts, for GUI Vim
-autocmd BufRead,BufNewFile *.rb map <C-CR> :% w !ruby -w<CR>
-autocmd BufRead,BufNewFile *.py map <C-CR> :% w !python<CR>
-
 " ignores
 set wildignore+=*.o,*.obj,*.pyc                " output objects
 set wildignore+=*.png,*.jpg,*.gif,*.ico        " image format
@@ -114,5 +106,3 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " remap VIM 0
 map 0 ^
-
-command! -range MD5 :echo system('echo '.shellescape(join(getline(<line1>, <line2>), '\n')) . '| md5')
