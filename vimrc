@@ -7,3 +7,6 @@ map <UP> <NOP>
 map <DOWN> <NOP>
 map <LEFT> <NOP>
 map <RIGHT> <NOP>
+
+" cancel searched highlight
+noremap <CR> :nohlsearch<CR>
