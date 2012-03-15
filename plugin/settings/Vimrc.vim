@@ -59,10 +59,6 @@ set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le
 set fenc=utf-8 enc=utf-8 tenc=utf-8
 scriptencoding utf-8
 
-" next and prev tab
-noremap <F7> gT
-noremap <F8> gt
-
 " ignores
 set wildignore+=*.o,*.obj,*.pyc                " output objects
 set wildignore+=*.png,*.jpg,*.gif,*.ico        " image format
@@ -78,16 +74,12 @@ set wildignore+=tmp/**
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
-" file type auto detect
-augroup filetypedetect
-  au! BufNewFile,BufRead *.as setf actionscript
-  au! BufNewFile,BufRead *.m setf objc
-  au! BufNewFile,BufRead *.scss setf scss
-augroup END
-
 " ======================================
 "  custom key and plugin configurations
 " ======================================
+" next and prev tab
+noremap <F7> gT
+noremap <F8> gt
 
 " identation
 nmap <TAB> v>
