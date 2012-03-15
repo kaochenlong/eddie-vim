@@ -102,4 +102,3 @@ hi cssClassName ctermfg=60 ctermbg=NONE cterm=bold guifg=#445588 guibg=NONE gui=
 hi cssValueLength ctermfg=30 ctermbg=NONE cterm=NONE guifg=#009999 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-

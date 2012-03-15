@@ -18,6 +18,8 @@ set clipboard+=unnamed
 set splitright                        " always open vertical split window in the right side
 set splitbelow                        " always open horizontal split window below
 set scrolloff=3                       " start scrolling when n lines away from margins
+set switchbuf=useopen
+set showtabline=2                     " always show tab
 
 filetype on                           " enable filetype detection
 filetype indent on                    " enable filetype-specific indenting
@@ -112,3 +114,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " remap VIM 0
 map 0 ^
+
+command! -range MD5 :echo system('echo '.shellescape(join(getline(<line1>, <line2>), '\n')) . '| md5')
