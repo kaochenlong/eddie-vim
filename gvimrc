@@ -1,16 +1,20 @@
-set guifont=Monaco:h17
-colorscheme rails_envy
-set transparency=0
 set guioptions=ce
 set antialias
+colorscheme rails_envy
 
-"Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nmap <D-j> mz:m+<cr>`z
-nmap <D-k> mz:m-2<cr>`z
-vmap <D-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <D-k> :m'<-2<cr>`>my`<mzgv`yo`z
+if has("gui_gtk")
+  set guifont=Monospace\ 14
+end
 
 if has("gui_macvim")
+  set guifont=Monaco:h17
+  set transparency=0
+
+  "Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+  nmap <D-j> mz:m+<cr>`z
+  nmap <D-k> mz:m-2<cr>`z
+  vmap <D-j> :m'>+<cr>`<my`>mzgv`yo`z
+  vmap <D-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
   " disable default menu hot key
   macmenu &File.New\ Window key=<nop>
