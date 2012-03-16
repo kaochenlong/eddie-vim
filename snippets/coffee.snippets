@@ -1,19 +1,57 @@
+# port from Textmate Coffeescript bundle (https://github.com/jashkenas/coffee-script-tmbundle)
+# by Eddie Kao (eddie@digik.com.tw)
+
 # Class
 snippet cla Class...
-	class ${1:name}
-	  constructor: (${2:params...}) ->
-	    ${3://body...}
-
+	class ${1:ClassName}
+	  constructor: (${2:args}) ->
+	    ${3: #body...}
 snippet cla Class...Extends
-	class ${1:name} extends ${2:parent}
-	  constructor: (${3:params...}) ->
-	    ${4://body...}
-
+	class ${1:ClassName} extends ${2:Ancestor}
+	  constructor: (${3:args}) ->
+	    ${4: # body...}
 # Function
 snippet fun
-	${1:function_name} = (${2:argumen}) ->
-	  ${3: //body...}
-
+	${1:name} = (${2:args}) ->
+	  ${3: # body...}
 snippet func
-	${1:function_name} = (${2:argumen}) ->
-	  ${3: //body...}
+	${1:name} = (${2:args}) ->
+	  ${3: # body...}
+# Flow control
+snippet if
+	if ${1:condition}
+	  ${0:# body...}
+snippet ife
+	if ${1:condition}
+	  ${2:# body...}
+	else
+	  ${3:# body...}
+snippet elif
+	else if ${1:condition}
+	  ${2:# body...}
+snippet unless
+	${1:action} unless ${2:condition}
+snippet switch
+	switch ${1:object}
+	  when ${2:value}
+	    ${3:# body...}
+# Bound
+snippet bfun
+	(${1:args}) => ${0:# body...}
+# Utils
+snippet log
+	console.log "${1}"
+snippet root
+	root = exports ? this
+# Array
+snippet for
+	for ${1:name} in ${2:array}
+	  ${3: # body...}
+# Try
+snippet try
+	try
+	  ${1}
+	catch ${2:error}
+	  ${3}
+	finally
+	  ${4}

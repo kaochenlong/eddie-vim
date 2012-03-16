@@ -1,9 +1,11 @@
 My own Vim configurations and modules which I used. and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> is my current screenshot of vim.
 
-Primary and Vim relative settings are in `plugin/settings/Vimrc.vim`, and isolate other plugins' in `plugin/settings` directory.
+Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
 ## Usage
+
 ### Install:
+
 1. BACKUP your `.vim` directory and `.vimrc` first.
 
 2. `cd ~` to change directory to your home directory.
@@ -29,7 +31,7 @@ Primary and Vim relative settings are in `plugin/settings/Vimrc.vim`, and isolat
 
         ln -s .vim/easy-vimrc .vimrc
 
-8. if you use GUI version VIM, such as MacVim, you can also link to `.gvimrc`:
+8. if you use GUI version VIM, such as MacVim or GVim, you can also link to `.gvimrc`:
 
         ln -s eddie-vim/gvimrc .gvimrc
 
@@ -38,6 +40,7 @@ Primary and Vim relative settings are in `plugin/settings/Vimrc.vim`, and isolat
 10. you may need to install `ack` first if you use `ack.vim`.
 
 ### Update:
+
 just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
 ### Features:
@@ -45,6 +48,7 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 1. Toggle between working mode and presentation mode by `<leader>z`.
 
 ## FAQ
+
 if you can not found `ctags` command, just find your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
 
     let Tlist_Ctags_Cmd = '/your/path/to/ctags'
@@ -52,6 +56,7 @@ if you can not found `ctags` command, just find your ctags path and replace my s
 and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
 
 ## Contact
+
 any question or comment, feel free to let me know :)
 
 Eddie Kao (eddie@digik.com.tw)
