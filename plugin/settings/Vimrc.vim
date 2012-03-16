@@ -4,6 +4,10 @@ set history=50                        " keep 50 lines of command line history
 set undolevels=100
 set ruler                             " show the cursor position all the time
 set autoread                          " auto read when file is changed from outside
+set wrap
+set linebreak
+set nolist
+set hidden
 set linespace=0
 set cursorline
 set nofoldenable
