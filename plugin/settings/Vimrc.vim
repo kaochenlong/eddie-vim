@@ -77,6 +77,12 @@ autocmd WinLeave * setlocal nocursorline
 " ======================================
 "  custom key and plugin configurations
 " ======================================
+" remove tailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
+" comment
+map <Leader><Leader> <Leader>c<space>
+
 " next and prev tab
 noremap <F7> gT
 noremap <F8> gt
@@ -89,12 +95,6 @@ vmap <S-TAB> <gv
 
 " select ALL
 map <C-A> ggVG
-
-" comment
-map <Leader><Leader> <Leader>c<space>
-
-" remove tailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
 
 " remap VIM 0
 map 0 ^
