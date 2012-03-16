@@ -98,3 +98,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " remap VIM 0
 map 0 ^
+
+" return current opened file's dirctory
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
