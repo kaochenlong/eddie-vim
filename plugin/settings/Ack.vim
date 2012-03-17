@@ -1,1 +1,1 @@
-cmap FF Ack<SPACE>
+noremap FF :Ack<SPACE>

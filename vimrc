@@ -10,3 +10,6 @@ map <RIGHT> <NOP>
 
 " cancel searched highlight
 noremap <CR> :nohlsearch<CR>
+
+" quick open vimrc in a new tab
+nmap <leader>v :tabe $MYVIMRC<CR>
