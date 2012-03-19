@@ -1,5 +1,5 @@
 " run scripts, for Non-GUI Vim
-autocmd BufRead,BufNewFile *.coffee map <leader>0 :silent CoffeeMake<CR>
+autocmd BufRead,BufNewFile *.coffee map <F5> :silent CoffeeMake<CR>:redraw!<CR>
 
 " run scripts, for GUI Vim
 if has("gui_macvim")
