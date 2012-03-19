@@ -17,3 +17,11 @@ noremap <C-v> P
 
 " cancel searched highlight
 noremap ; :nohlsearch<CR>
+
+" navigating for long lines
+map j gj
+map k gk
+map <UP> gk
+map <DOWN> gj
+imap <UP> <ESC>gk<RIGHT>i
+imap <DOWN> <ESC>gj<RIGHT>i
