@@ -105,3 +105,6 @@ map 0 ^
 
 " return current opened file's dirctory
 cnoremap %% <C-R>=expand('%:h').'/'<CR>
+
+" quick open vimrc in a new tab
+nmap <leader>v :tabe $MYVIMRC<CR>

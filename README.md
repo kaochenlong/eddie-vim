@@ -1,4 +1,4 @@
-My own Vim configurations and modules which I used. and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> is my current screenshot of vim.
+My own Vim configurations and plugins which I used. <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> is my current screenshot of vim.
 
 Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
@@ -6,7 +6,7 @@ Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isola
 
 ### Install:
 
-1. BACKUP your `.vim` directory and `.vimrc` first.
+1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
 2. `cd ~` to change directory to your home directory.
 
@@ -27,7 +27,7 @@ Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isola
 
         ln -s .vim/vimrc .vimrc
 
-7. if you're still not familiar with the movement in vim by HJKL, maybe you can try the easier version:
+7. if you're still not familiar with the movement in vim by HJKL, I've made a easier version:
 
         ln -s .vim/easy-vimrc .vimrc
 
@@ -45,7 +45,17 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
 ### Features:
 
-1. Toggle between working mode and presentation mode by `<leader>z`.
+1. Resize splited windows automatically, so that you  get a bigger editing room if you're working with a smaller screen. (stole from [Gary Bernhardt](https://github.com/garybernhardt))
+
+2. Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
+
+3. usually used key mappings:
+
+    a. hit `<leader>` twice to toggle comment on and off.
+    b. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
+    c. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
+    d. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
+    e. `<leader>v` to open `.vimrc` in a new tab.
 
 ## FAQ
 
