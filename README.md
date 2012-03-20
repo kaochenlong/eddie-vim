@@ -49,13 +49,19 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
 2. Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
 
-3. usually used key mappings:
+3. some usually used key mappings in normal mode:
 
     a. hit `<leader>` twice to toggle comment on and off.
+    
     b. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
+    
     c. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
+    
     d. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
+    
     e. `<leader>v` to open `.vimrc` in a new tab.
+    
+    f. `<leader>0` to edit or create `README.md` in current working directory.
 
 ## FAQ
 
