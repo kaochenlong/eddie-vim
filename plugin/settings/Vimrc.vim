@@ -1,6 +1,6 @@
 set nocompatible                      " not compatible with the old-fashion vi mode
 set backspace=2                       " allow backspacing over everything in insert nc >kkmode
-set history=50                        " keep 50 lines of command line history
+set history=150                       " keep 150 lines of command line history
 set undolevels=100
 set ruler                             " show the cursor position all the time
 set autoread                          " auto read when file is changed from outside

@@ -51,17 +51,19 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
 3. some usually used key mappings in normal mode:
 
-    a. hit `<leader>` twice to toggle comment on and off.
+    a. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
     
-    b. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
+    b. hit `<leader>` twice to toggle comment on and off.
     
-    c. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
+    c. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
     
-    d. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
+    d. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
     
-    e. `<leader>v` to open `.vimrc` in a new tab.
+    e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
     
-    f. `<leader>0` to edit or create `README.md` in current working directory.
+    f. `<leader>v` to open `.vimrc` in a new tab.
+    
+    g. `<leader>0` to edit or create `README.md` in current working directory.
 
 ## FAQ
 
