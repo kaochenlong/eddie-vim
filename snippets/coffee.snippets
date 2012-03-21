@@ -45,8 +45,6 @@ snippet bfun
 # Utils
 snippet log
 	console.log "${1}"
-snippet root
-	root = exports ? this
 snippet jq
 	$ ->
 	  ${1:# body}
@@ -65,22 +63,48 @@ snippet try
 # ---------
 # Backbone
 # ---------
+snippet root
+	root = exports ? this
 snippet winapp
 	@app = window.app ? {}
 # Backbone - Collection
-snippet BB create a Collection class
-	class ${1:CollectionName} extends Backbone.Collection
+snippet BB create a Backbone Collection class
+	class ${1:CollectionClassName} extends Backbone.Collection
+
 	  model: ${2:ModelName}
+
 	  url: '${3:URL}'
 	  ${4}
 # Backbone - Model
-snippet BB create a Model class
+snippet BB create a Backbone Model class
 	class ${1:ModelName} extends Backbone.Model
 	  ${2}
 # Backbone - View
-snippet BB create a View class
-	class ${1:ViewName} extends Backbone.View
+snippet BB create a Backbone View class
+	class ${1:ViewClassName} extends Backbone.View
+
+	  # default tagName is <li>
 	  tagName: "${2}"
-	  template: _.template($('#${3}').html())
-	  ${4}
+
+	  className: "${3}"
+
+	  events:
+	    "click": "open"
+
+	  urlRoot: "${4}"
+
+	  template: _.template($('#${5}').html())
+
+	  render: ->
+	    ${6:# your render function}
 # Backbone - Route
+snippet BB create a Backbone Router class
+	class ${1:RouterClassName} extends Backbone.Router
+	  # urls mapping
+	  routes:
+	    # map to the root path
+	    "": "index"
+
+	  index: ->
+	    alert "hello"
+	  ${2}
