@@ -83,26 +83,34 @@ snippet BB create a Backbone Model class
 snippet BB create a Backbone View class
 	class ${1:ViewClassName} extends Backbone.View
 
-	  # default tagName is <li>
+	  # element settings
 	  tagName: "${2}"
-
 	  className: "${3}"
+	  id: "${4}"
 
+	  # initializer, you might register model or
+	  # collection's event listener here.
+	  # example: @model.on 'change', @render, @
+	  initialize: ->
+	    ${5}
+
+	  # view events
 	  events:
 	    "click": "open"
 
-	  urlRoot: "${4}"
+	  # template method
+	  template: _.template($('#${6}').html())
 
-	  template: _.template($('#${5}').html())
-
+	  # render method, usually return self conventionally for chaining
 	  render: ->
-	    ${6:# your render function}
+	    ${7:# your render function}
+	    @
 # Backbone - Route
 snippet BB create a Backbone Router class
 	class ${1:RouterClassName} extends Backbone.Router
 	  # urls mapping
 	  routes:
-	    # map to the root path
+	    # map the root path to index action
 	    "": "index"
 
 	  index: ->
