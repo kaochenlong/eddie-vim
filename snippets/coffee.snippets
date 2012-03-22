@@ -75,10 +75,13 @@ snippet BB create a Backbone Collection class
 
 	  url: '${3:URL}'
 	  ${4}
+	# -------------------------------------------------------
 # Backbone - Model
 snippet BB create a Backbone Model class
 	class ${1:ModelName} extends Backbone.Model
-	  ${2}
+	  urlRoot: '${2}url'
+	  ${3}
+	# -------------------------------------------------------
 # Backbone - View
 snippet BB create a Backbone View class
 	class ${1:ViewClassName} extends Backbone.View
@@ -105,6 +108,7 @@ snippet BB create a Backbone View class
 	  render: ->
 	    ${7:# your render function}
 	    @
+	# -------------------------------------------------------
 # Backbone - Route
 snippet BB create a Backbone Router class
 	class ${1:RouterClassName} extends Backbone.Router
@@ -116,3 +120,4 @@ snippet BB create a Backbone Router class
 	  index: ->
 	    alert "hello"
 	  ${2}
+	# -------------------------------------------------------
