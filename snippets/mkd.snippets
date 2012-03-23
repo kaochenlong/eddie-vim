@@ -5,6 +5,15 @@ snippet image
 # -----------------------------------------
 # personal usage in Octopress blog plugin
 # -----------------------------------------
+snippet blog Header
+	---
+	layout: post
+	title: ${1:Blog Title}
+	date: `strftime("%Y-%m-%d %H:%M")`
+	comments: true
+	categories:
+	---
+	${2}
 snippet video Youtube
 	{% youtube ${1:video code} %}${2}
 snippet video Vimeo
