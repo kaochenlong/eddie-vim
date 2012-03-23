@@ -1,0 +1,19 @@
+snippet link
+	[${1:description}](${2:url})${3}
+snippet image
+	![image](${1:image path})${2}
+# -----------------------------------------
+# personal usage in Octopress blog plugin
+# -----------------------------------------
+snippet video Youtube
+	{% youtube ${1:video code} %}${2}
+snippet video Vimeo
+	{% vimeo ${1:video code} %}${2}
+snippet code Ruby
+	{% codeblock lang:rb %}
+	${1}
+	{% endcodeblock %}
+snippet code Python
+	{% codeblock lang:py %}
+	${1}
+	{% endcodeblock %}
