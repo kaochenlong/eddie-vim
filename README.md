@@ -2,8 +2,6 @@ My own Vim configurations and plugins which I used. <a href="http://blog.eddie.c
 
 Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
-I've DISABLED THE ARROW KEYS to force myself to practice `hjkl` movement, feel free to remove the settings if you like. Or you can use the easy version `easy-vimrc`.
-
 ## Usage
 
 ### Install:
@@ -29,7 +27,7 @@ I've DISABLED THE ARROW KEYS to force myself to practice `hjkl` movement, feel f
 
         ln -s .vim/vimrc .vimrc
 
-7. if you're still not familiar with the movement in vim by HJKL, I've made a easier version:
+7. if you're still not familiar with the movement in vim by HJKL or yanking and pasting text, I've made a easier version:
 
         ln -s .vim/easy-vimrc .vimrc
 
