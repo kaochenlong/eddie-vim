@@ -2,6 +2,8 @@ My own Vim configurations and plugins which I used. <a href="http://blog.eddie.c
 
 Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
+I've DISABLED THE ARROW KEYS to force myself to practice `hjkl` movement, feel free to remove the settings if you like. Or you can use the easy version `easy-vimrc`.
+
 ## Usage
 
 ### Install:
@@ -52,17 +54,17 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 3. some usually used key mappings in normal mode:
 
     a. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
-    
+
     b. hit `<leader>` twice to toggle comment on and off.
-    
+
     c. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
-    
+
     d. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
-    
+
     e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
-    
+
     f. `<leader>v` to open `.vimrc` in a new tab.
-    
+
     g. `<leader>0` to edit or create `README.md` in current working directory.
 
 ## FAQ

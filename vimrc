@@ -15,6 +15,10 @@ map <UP> <NOP>
 map <DOWN> <NOP>
 map <LEFT> <NOP>
 map <RIGHT> <NOP>
+inoremap <UP> <nop>
+inoremap <DOWN> <nop>
+inoremap <LEFT> <nop>
+inoremap <RIGHT> <nop>
 
 " cancel searched highlight
 noremap <CR> :nohlsearch<CR>
