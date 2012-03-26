@@ -1,1 +1,2 @@
-autocmd BufRead,BufNewFile *.coffee map <F5> :% w<CR>:echon "Compiling..."<CR>:silent CoffeeMake<CR>:redraw!<CR>:echon "Done!"<CR>
+"autocmd BufRead,BufNewFile *.coffee map <F5> :silent CoffeeMake!<CR>:redraw!<CR>
+autocmd BufRead,BufNewFile *.coffee map <F5> :CoffeeRun<CR>

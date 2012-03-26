@@ -48,7 +48,7 @@ set smarttab                          " insert tabs on the start of a line accor
 set expandtab                         " replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
-au FileType Makefile set noexpandtab
+set noexpandtab
 set shortmess=I                       " remove splash wording
 
 " disable sound on errors
