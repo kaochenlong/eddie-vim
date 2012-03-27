@@ -89,3 +89,6 @@
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
         ignore = untracked
+[submodule "bundle/vim-presen"]
+	path = bundle/vim-presen
+	url = git://github.com/sorah/presen.vim.git
