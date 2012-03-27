@@ -8,8 +8,12 @@ snippet hm
 	has_many :${1}s
 snippet bt
 	belongs_to :${1}
+snippet habtm
+	has_and_belongs_to_many :${1}
 snippet aa
 	attr_accessible :${1}
+snippet flash
+	flash[:${1:notice}] = "${2}"
 snippet crud
 	def index${1}
 	end

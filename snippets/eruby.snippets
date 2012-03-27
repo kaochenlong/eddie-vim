@@ -1,6 +1,51 @@
 snippet lt
-	<%= link_to "${1}", ${2} %>${3}
+	<%= link_to "${1:caption}", ${2:path} %>${3}
 snippet cf
-	<%= content_for :${1} do %>
-	${2}
+	<%= content_for :${1:yield_label_name} do %>
+	  ${2}
 	<% end %>
+snippet ff
+	<% form_for @${1:model} do |f| %>
+	  <%= f.error_messages %>
+	  <%= f.submit "${2:button}" %>
+	<% end %>
+snippet ffff
+	<%= f.file_field :${1:attribute} %>
+snippet ffhf
+	<%= f.hidden_field :${1:attribute} %>
+snippet ffl
+	<%= f.label :${1:attribute}, '${2:label}' %>
+snippet ffpf
+	<%= f.password_field :${1:attribute} %>
+snippet ffrb
+	<%= f.radio_button :${1:attribute}, :${2:tag_value} %>
+snippet ffs
+	<%= f.submit "${1:Submit}" %>
+snippet ffta
+	<%= f.text_area :${1:attribute} %>
+snippet fftf
+	<%= f.text_field :${1:attribute} %>
+snippet jit
+	<%= javascript_include_tag "${1:javascript_filename}" %>
+snippet slt
+	<%= stylesheet_link_tag "${1:stylesheet_filename}", :media => "${2:all}" %>
+snippet each
+	<% ${1:collection}.each do |${2:member}| %>
+	  ${3}
+	<% end %>
+snippet if
+	<% if ${1:condition} %>
+	  ${2}
+	<% end %>
+snippet unless
+	<% unless ${1:cond} %>
+	  ${2}
+	<% end %>
+snippet ife
+	<% if ${1:cond} %>
+	  ${2}
+	<% else %>
+	  ${3}
+	<% end %>
+snippet yield
+	<%= yield :${1:partial} %>

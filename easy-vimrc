@@ -1,12 +1,13 @@
 " Easy version Vimrc
-" And I kept all the others settings in plugins/settings directory
-" I'm still new to Vim, any suggestion is welcome.
+" I kept all the others settings in plugins/settings directory
 "
 " Eddie Kao
 " http://blog.eddie.com.tw
 " eddie@digik.com.tw
 
+filetype off
 call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
 call pathogen#infect()
 call pathogen#helptags()
 
