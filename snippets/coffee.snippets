@@ -106,7 +106,7 @@ snippet BB create a Backbone View class
 
 	  # render method, usually return self conventionally for chaining
 	  render: ->
-	    ${7:# your render function}
+	    $(@el).html(@template())
 	    @
 
 # Backbone - Route
