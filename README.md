@@ -1,6 +1,6 @@
-My own Vim configurations and plugins which I used. 
+My own Vim configurations and plugins which I used.
 
-Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
+Primary Vim relative settings are in `plugin/settings/Settings.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
 It's how my Vim looks now:
 
