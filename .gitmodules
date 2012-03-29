@@ -92,3 +92,6 @@
 [submodule "bundle/vim-presen"]
 	path = bundle/vim-presen
 	url = git://github.com/sorah/presen.vim.git
+[submodule "bundle/calendar.vim"]
+	path = bundle/calendar.vim
+	url = git://github.com/vim-scripts/calendar.vim--Matsumoto.git
