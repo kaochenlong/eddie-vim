@@ -15,7 +15,7 @@ set number
 set numberwidth=4
 set title
 set showmode
-set nobomb
+set nobomb                            " no BOM(Byte Order Mark)
 set nostartofline
 set laststatus=2
 set clipboard+=unnamed
