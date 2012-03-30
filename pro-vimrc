@@ -25,8 +25,9 @@ inoremap <RIGHT> <nop>
 noremap <CR> :nohlsearch<CR>
 
 " experimental
-set modelines=0
+set nomodeline
 set ttyfast
 set notimeout
 set ttimeout
 set ttimeoutlen=10
+set lazyredraw

@@ -98,3 +98,4 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git://github.com/vim-scripts/Align.git
+        ignore = untracked

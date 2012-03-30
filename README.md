@@ -10,7 +10,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 ## Usage
 
-### Install:
+### Installation and Requisites:
 
 1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
@@ -47,9 +47,9 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 ### Update:
 
-just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
+change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
-### Features:
+### Features and Key Mappings:
 
 1. Resize splited windows automatically, so that you  get a bigger editing room if you're working with a smaller screen. (stole from [Gary Bernhardt](https://github.com/garybernhardt))
 
@@ -60,7 +60,7 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
     a. `<F1>` to launch a Calendar window.
 
     a. `<F2>` to toggle NERDTree on and off.
-    
+
     a. `<F4>` to toggle Taglist window.
 
     a. `<F5>` is script runner, according to the filetype, it will run Ruby or Python script, or even CoffeeScript(You have to install CoffeeScript first, of course). if the filetype is VimScript, `<F5>` will run `:source %` for you.
@@ -77,6 +77,8 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
     a. `<leader>v` to open `.vimrc` in a new tab.
 
     a. `<leader>0` to edit or create `README.md` in current working directory.
+
+4. Remove tailing whitespace automatically while saving.
 
 ## FAQ
 
