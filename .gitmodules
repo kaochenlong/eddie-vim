@@ -27,9 +27,6 @@
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "bundle/vim-preview"]
-	path = bundle/vim-preview
-	url = git://github.com/greyblake/vim-preview.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
@@ -89,9 +86,6 @@
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
         ignore = untracked
-[submodule "bundle/vim-presen"]
-	path = bundle/vim-presen
-	url = git://github.com/sorah/presen.vim.git
 [submodule "bundle/calendar.vim"]
 	path = bundle/calendar.vim
 	url = git://github.com/vim-scripts/calendar.vim--Matsumoto.git
@@ -102,3 +96,4 @@
 [submodule "bundle/vim-octopress"]
 	path = bundle/vim-octopress
 	url = git://github.com/tangledhelix/vim-octopress.git
+        ignore = untracked
