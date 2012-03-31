@@ -100,3 +100,10 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vim-yankring"]
+	path = bundle/vim-yankring
+	url = git://github.com/vim-scripts/YankRing.vim.git
+        ignore = untracked
+[submodule "bundle/vim-actionscript"]
+	path = bundle/vim-actionscript
+	url = git://github.com/vim-scripts/actionscript.vim--Leider.git
