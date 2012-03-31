@@ -99,3 +99,6 @@
 	path = bundle/align
 	url = git://github.com/vim-scripts/Align.git
         ignore = untracked
+[submodule "bundle/vim-octopress"]
+	path = bundle/vim-octopress
+	url = git://github.com/tangledhelix/vim-octopress.git
