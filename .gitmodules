@@ -97,3 +97,6 @@
 	path = bundle/vim-octopress
 	url = git://github.com/tangledhelix/vim-octopress.git
         ignore = untracked
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
