@@ -59,24 +59,24 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
     a. `<F1>` to launch a Calendar window.
 
-    a. `<F2>` to toggle NERDTree on and off.
+    b. `<F2>` to toggle NERDTree on and off.
 
-    a. `<F4>` to toggle Taglist window.
+    c. `<F4>` to toggle Taglist window.
 
-    a. `<F5>` is script runner, according to the filetype, it will run Ruby or Python script, or even CoffeeScript(You have to install CoffeeScript first, of course). if the filetype is VimScript, `<F5>` will run `:source %` for you.
+    d. `<F5>` is script runner, according to the filetype, it will run Ruby or Python script, or even CoffeeScript(You have to install CoffeeScript first, of course). if the filetype is VimScript, `<F5>` will run `:source %` for you.
 
-    a. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
+    e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
 
-    a. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
+    f. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
 
-    a. hit `<leader>` twice to toggle comment on and off.
+    g. hit `<leader>` twice to toggle comment on and off.
 
-    a. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
+    h. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
 
 
-    a. `<leader>v` to open `.vimrc` in a new tab.
+    i. `<leader>v` to open `.vimrc` in a new tab.
 
-    a. `<leader>0` to edit or create `README.md` in current working directory.
+    j. `<leader>0` to edit or create `README.md` in current working directory.
 
 4. Remove tailing whitespace automatically while saving.
 
