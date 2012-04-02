@@ -107,3 +107,6 @@
 [submodule "bundle/vim-actionscript"]
 	path = bundle/vim-actionscript
 	url = git://github.com/vim-scripts/actionscript.vim--Leider.git
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git
