@@ -13,3 +13,6 @@ autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
 
 " JSON
 autocmd! BufNewFile,BufRead *.json set filetype=javascript
+
+" GitIgnore
+autocmd! BufNewFile,BufRead *.gitignore set filetype=gitignore
