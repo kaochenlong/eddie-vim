@@ -16,3 +16,6 @@ autocmd! BufNewFile,BufRead *.json set filetype=javascript
 
 " GitIgnore
 autocmd! BufNewFile,BufRead *.gitignore set filetype=gitignore
+
+" ZSH
+autocmd! BufNewFile,BufRead *.zsh-theme set filetype=zsh
