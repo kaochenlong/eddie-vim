@@ -21,9 +21,6 @@
 [submodule "bundle/vim-coffeescript"]
 	path = bundle/vim-coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
