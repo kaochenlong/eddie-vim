@@ -1,5 +1,3 @@
-nnoremap <C-W><C-P> :CtrlP<CR>
-nnoremap <C-W>p :CtrlP<CR>
 nnoremap <C-W><C-U> :CtrlPMRU<CR>
 nnoremap <C-W>u :CtrlPMRU<CR>
 

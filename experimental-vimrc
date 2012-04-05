@@ -32,3 +32,4 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 set lazyredraw
+set shell=zsh

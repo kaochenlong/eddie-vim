@@ -67,7 +67,7 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
     e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
 
-    f. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
+    f. hit `<ctrl>p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. And `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
 
     g. hit `<leader>` twice to toggle comment on and off.
 
