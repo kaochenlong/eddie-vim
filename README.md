@@ -63,7 +63,7 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
     c. `<F4>` to toggle Taglist window.
 
-    d. `<F5>` is script runner, according to the filetype, it will run Ruby or Python script, or even CoffeeScript(You have to install CoffeeScript first, of course). if the filetype is VimScript, `<F5>` will run `:source %` for you.
+    d. `<F5>` is the script runner, according to it's filetype, it will run Ruby(*.rb) ,Python(*.py) or Javascript(*.js) file(SpiderMonkey is needed), even CoffeeScript(*.coffee, but you may have to install CoffeeScript first). If the filetype is VimScript, `<F5>` will run `:source %` for you.
 
     e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
 
