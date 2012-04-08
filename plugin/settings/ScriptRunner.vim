@@ -9,6 +9,9 @@ autocmd BufRead,BufNewFile *.coffee map <F5> :CoffeeRun<CR>
 " Javascript
 autocmd BufRead,BufNewFile *.js map <F5> :% w !js %<CR>
 
+" PHP
+autocmd BufRead,BufNewFile *.php map <F5> :% w !php<CR>
+
 " Python
 autocmd BufRead,BufNewFile *.py map <F5> :% w !python<CR>
 
