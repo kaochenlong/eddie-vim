@@ -33,6 +33,8 @@ map j gj
 map k gk
 map <UP> gk
 map <DOWN> gj
+"vnoremap j gj
+"vnoremap k gk
 imap <UP> <ESC>gk<RIGHT>i
 imap <DOWN> <ESC>gj<RIGHT>i
 
