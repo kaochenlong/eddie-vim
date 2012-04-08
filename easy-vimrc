@@ -35,3 +35,7 @@ map <UP> gk
 map <DOWN> gj
 imap <UP> <ESC>gk<RIGHT>i
 imap <DOWN> <ESC>gj<RIGHT>i
+
+" select ALL
+map <C-A> ggVG
+

@@ -99,9 +99,6 @@ nmap <S-TAB> v<
 vmap <TAB> >gv
 vmap <S-TAB> <gv
 
-" select ALL
-map <C-A> ggVG
-
 " remap VIM 0
 map 0 ^
 
