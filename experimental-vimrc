@@ -14,7 +14,7 @@ if filereadable(expand("~/.vim/pro-vimrc"))
   set notimeout
   set ttimeout
   set ttimeoutlen=10
-  set lazyredraw
+  "set lazyredraw
   set shell=zsh
 else
   echo "~/.vim/pro-vimrc doesn't exist"

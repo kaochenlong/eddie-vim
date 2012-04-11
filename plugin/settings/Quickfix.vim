@@ -12,3 +12,5 @@ function! QFixToggle(forced)
 endfunction
 
 nnoremap <leader>q :QFix<CR>
+
+autocmd BufWinEnter quickfix let g:qfix_win = bufnr("$")
