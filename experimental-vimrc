@@ -34,7 +34,7 @@ if filereadable(expand("~/.vim/pro-vimrc"))
   set ttimeout
   set ttimeoutlen=10
   set shell=zsh
-  nnoremap <leader>zz :call ToggleZZMode()<CR>
+  nnoremap <leader>mm :call ToggleZZMode()<CR>
 else
   echo "~/.vim/pro-vimrc doesn't exist"
 endif
