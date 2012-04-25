@@ -20,3 +20,6 @@ autocmd BufRead,BufNewFile *.rb map <F5> :% w !ruby -w<CR>
 
 " VimScript
 autocmd BufRead,BufNewFile *.vim map <F5> :source %<CR>:echon "script reloaded!"<CR>
+
+" Scala
+autocmd BufRead,BufNewFile *.scala map <F5> :% w !scala %<CR>
