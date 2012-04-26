@@ -1,0 +1,106 @@
+snippet class
+	class ${1:ClassName} {
+	  ${2}
+	}${3}
+## case class
+snippet cclass
+	case class ${1:ClassName} {
+	  ${2}
+	}${3}
+snippet trait
+	trait ${1:TraitName} {
+	  ${2}
+	}${3}
+## singleton object
+snippet object
+	object ${1:ObjectName} {
+	  ${2}
+	}${3}
+## application trait
+snippet application
+	object ${1:ObjectName} extends Application {
+	  ${2}
+	}${3}
+## defines a type (e.g. structural)
+snippet type
+	type ${1} = {${2}}${3}
+## method definition
+snippet def
+	def ${1:method}(${2})${3: : ${4:Unit}} = {
+	  ${5}
+	}${6}
+## if conditional
+snippet if
+	if (${1:condition}) {
+	  ${2:// expression}
+	}${3}
+snippet ifelse
+	if (${1:condition}) {
+	  ${2:// expression}
+	} else {
+	  ${3}
+	}${4}
+snippet while
+	while (${1:condition}) {
+	  ${2:// expression}
+	}${3}
+snippet try
+	try {
+	  ${2:// expression}
+	}
+	catch {
+	  case e : ${1:Exception} => ${3:// expression}
+	}${4}
+## try..catch..finally
+snippet tfc
+	try {
+	  ${2:// expression}
+	}
+	catch {
+	  case e : ${1:Exception} => ${3:// expression}
+	}
+	finally {
+	  ${4:// expression}
+	}${5}
+## private
+snippet pr
+	private
+## scoped private
+snippet pri
+	private[${1:this}]${2}
+## protected
+snippet pro
+	protected
+## scoped protected
+snippet prop
+	protected[${1:this}]${2}
+snippet for
+	for (${1} <- ${2}) {
+	  ${3}
+	}${4}
+snippet foreach
+	foreach {${1} =>
+	  ${2}
+	}${3}
+snippet match
+	match {
+	  case ${1} => ${2}
+	}${3}
+snippet case
+	case ${1} => ${2}${3}
+## println
+snippet p
+	println(${1})${2}
+snippet main
+	def main(args: Array[String]) = {
+	  ${1}
+	}${2}
+## specifies arguments - x1
+snippet 1
+	(${1:first}: ${2:Type})${3}
+## specifies arguments - x2
+snippet 2
+	(${1:first}: ${2:Type}, ${3:second}: ${4:Type})${5}
+## specifies arguments - x3
+snippet 3
+	(${1:first}: ${2:Type}, ${3:second}: ${4:Type}, ${5:third}: ${6:Type})${7}
