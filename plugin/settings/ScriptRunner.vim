@@ -23,3 +23,6 @@ autocmd BufRead,BufNewFile *.vim map <F5> :source %<CR>:echon "script reloaded!"
 
 " Scala
 autocmd BufRead,BufNewFile *.scala map <F5> :% w !scala %<CR>
+
+" Perl
+autocmd BufRead,BufNewFile *.pl map <F5> :% w !perl %<CR>
