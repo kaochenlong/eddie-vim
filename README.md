@@ -57,7 +57,7 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
 3. some usually used key mappings in normal mode:
 
-    a. `<F1>` to launch a Calendar window.
+    a. `<F1>` to toggle a Calendar window on and off.
 
     b. `<F2>` to toggle NERDTree on and off.
 
