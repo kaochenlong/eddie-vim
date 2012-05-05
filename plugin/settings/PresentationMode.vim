@@ -4,7 +4,6 @@
 " font size change only work for GUI-version Vim
 
 function! PresentationModeOn()
-
   colorscheme github
 
   if has("gui_macvim")
@@ -12,11 +11,9 @@ function! PresentationModeOn()
   elseif has("gui_gtk")
     set guifont=Monospace\ 22        " for ubuntu
   end
-
 endfunction
 
 function! PresentationModeOff()
-
   colorscheme rails_envy
 
   if has("gui_macvim")
@@ -24,11 +21,9 @@ function! PresentationModeOff()
   elseif has("gui_gtk")
     set guifont=Monospace\ 14        " for ubuntu
   end
-
 endfunction
 
 function! TogglePresentationMode()
-
   if !exists('w:present')
     let w:present=0
   endif
@@ -40,7 +35,6 @@ function! TogglePresentationMode()
     call PresentationModeOff()
     let w:present=0
   endif
-
 endfunction
 
 map <leader>z :call TogglePresentationMode()<CR>

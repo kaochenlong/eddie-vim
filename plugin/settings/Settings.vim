@@ -42,7 +42,7 @@ colorscheme rails_envy
 
 set nobackup                          " no *~ backup files
 set noswapfile
-set nowb
+set nowritebackup
 set copyindent                        " copy the previous indentation on autoindenting
 set ignorecase                        " ignore case when searching
 set smartcase
@@ -50,7 +50,7 @@ set smarttab                          " insert tabs on the start of a line accor
 set expandtab                         " replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set tabstop=2
 set shortmess=I                       " remove splash wording
 
 " disable sound on errors
