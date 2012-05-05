@@ -61,7 +61,7 @@ set tm=500
 
 " file encoding
 set encoding=utf-8
-set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le
+set fileencodings=ucs-bom,utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,latin1
 set fenc=utf-8 enc=utf-8 tenc=utf-8
 scriptencoding utf-8
 
