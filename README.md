@@ -1,6 +1,18 @@
-My own Vim configurations and plugins which I used.
+My personal Vim configurations and some plugins which I used in my daily job.
 
-Primary Vim relative settings are in `plugin/settings/Settings.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
+I put Vim related settings in `plugin/settings/Settings.vim`, and isolate other plugins' settings in `plugin/settings` directory.
+
+You may notice that there are several vimrc files:
+
+1. `vimrc`, standard version vimrc.
+
+2. `easy-vimrc`, same as vimrc, but add some easier key mapping for new Vimer.
+
+3. `pro-vimrc`, same as vimrc, but remove the arrow keys mapping.
+
+4. `experimental-vimrc`, same as pro-vimrc, but just for experimental purpose.
+
+you can link your `~/.vimrc` to any one of them as you wish :)
 
 It's how my Vim looks now:
 
