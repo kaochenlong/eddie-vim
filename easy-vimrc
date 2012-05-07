@@ -5,12 +5,12 @@
 " http://blog.eddie.com.tw
 " eddie@digik.com.tw
 
-if filereadable(expand("~/.vim/vimrc"))
-  " load vimrc
-  source ~/.vim/vimrc
-else
-  echo "~/.vim/vimrc doesn't exist"
-endif
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
+call pathogen#infect()
+call pathogen#helptags()
 
 " =============
 "  custom key
@@ -25,6 +25,9 @@ noremap <BS> X
 noremap <C-c> y
 noremap <C-v> P
 
+" cancel searched highlight
+noremap ; :nohlsearch<CR>
+
 " navigating for long lines
 map j gj
 map k gk
@@ -32,3 +35,6 @@ map <UP> gk
 map <DOWN> gj
 imap <UP> <ESC>gk<RIGHT>i
 imap <DOWN> <ESC>gj<RIGHT>i
+
+" select ALL
+map <C-A> ggVG
