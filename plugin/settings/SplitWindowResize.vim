@@ -4,6 +4,8 @@ if bufwinnr(1)
   map <C-W>9 :resize -10<CR>
   map <C-W>. :vertical resize +30<CR>
   map <C-W>, :vertical resize -30<CR>
+  map <silent><LEADER>= :vertical resize +30<CR>
+  map <silent><LEADER>- :vertical resize -30<CR>
 endif
 
 " make the current window bigger
