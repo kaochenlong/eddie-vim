@@ -29,7 +29,6 @@ if filereadable(expand("~/.vim/pro-vimrc"))
   source ~/.vim/pro-vimrc
   " some experimental settings
   set nomodeline
-  set ttyfast
   set notimeout
   set ttimeout
   set ttimeoutlen=10

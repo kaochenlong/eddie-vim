@@ -29,6 +29,7 @@ set wildmenu                          " make tab completion for files/buffers ac
 set key=			                        " disable encryption
 set synmaxcol=2048
 set viminfo=			                    " disable .viminfo file
+set ttyfast                           " send more chars while redrawing
 
 filetype on                           " enable filetype detection
 filetype indent on                    " enable filetype-specific indenting
