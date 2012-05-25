@@ -15,8 +15,8 @@ if has("gui_macvim")
   set transparency=0
 
   " disable IM while leaving insert mode
-  autocmd InsertEnter * set noimdisable
-  autocmd InsertLeave * set imdisable
+  "autocmd InsertEnter * set noimdisable
+  "autocmd InsertLeave * set imdisable
 
   " move a line of text using ALT+[jk] or Comamnd+[jk] on mac
   nmap <D-j> mz:m+<cr>`z
