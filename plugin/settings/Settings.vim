@@ -21,7 +21,7 @@ set laststatus=2
 set clipboard+=unnamed
 set splitright                        " always open vertical split window in the right side
 set splitbelow                        " always open horizontal split window below
-set scrolloff=3                       " start scrolling when n lines away from margins
+set scrolloff=5                       " start scrolling when n lines away from margins
 set switchbuf=useopen
 set showtabline=2                     " always show tab
 set wildmode=longest,list             " use emacs-style tab completion when selecting files, etc
@@ -40,7 +40,10 @@ set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
 set t_Co=256
-colorscheme rails_envy
+try
+  colorscheme rails_envy
+catch
+endtry
 
 set nobackup                          " no *~ backup files
 set noswapfile
