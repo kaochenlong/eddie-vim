@@ -1,1 +1,1 @@
-cmap mm .!md5 -qs ""<left>
+"cmap mm .!md5 -qs ''<left>
