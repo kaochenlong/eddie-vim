@@ -16,7 +16,7 @@ endif
 if executable("js")
   autocmd BufRead,BufNewFile *.js map <F5> :% w !js %<CR>
 else
-  autocmd BufRead,BufNewFile *.js map <F5> :echo "you need to install ScriptMonkey first!"<CR>
+  autocmd BufRead,BufNewFile *.js map <F5> :echo "you need to install SpiderMonkey first!"<CR>
 endif
 
 " PHP
