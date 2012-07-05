@@ -116,3 +116,6 @@
 	path = bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
         ignore = untracked
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
