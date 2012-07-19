@@ -38,7 +38,8 @@ hi Identifier ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8ae5ef guibg=NONE gui=i
 hi Keyword ctermfg=72 ctermbg=NONE cterm=NONE guifg=#40a187 guibg=NONE gui=NONE
 hi Label ctermfg=227 ctermbg=NONE cterm=NONE guifg=#ffff66 guibg=NONE gui=NONE
 "hi NonText ctermfg=59 ctermbg=234 cterm=NONE guifg=#3b3a32 guibg=#1e1e1b gui=NONE
-hi NonText ctermfg=234 ctermbg=234 cterm=NONE guifg=#1e1e1b guibg=#1e1e1b gui=NONE
+"hi NonText ctermfg=bg ctermbg=bg cterm=NONE guifg=#1e1e1b guibg=#1e1e1b gui=NONE
+hi NonText ctermfg=bg ctermbg=bg cterm=NONE guifg=bg guibg=bg gui=NONE
 hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Operator ctermfg=72 ctermbg=NONE cterm=NONE guifg=#40a187 guibg=NONE gui=NONE
 hi PreProc ctermfg=72 ctermbg=NONE cterm=NONE guifg=#40a187 guibg=NONE gui=NONE

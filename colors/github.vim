@@ -42,7 +42,8 @@ hi Keyword ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi Label ctermfg=161 ctermbg=NONE cterm=NONE guifg=#dd1144 guibg=NONE gui=NONE
 "hi NonText ctermfg=250 ctermbg=189 cterm=NONE guifg=#bfbfbf guibg=#ececf2 gui=NONE
 "hi NonText ctermfg=189 ctermbg=189 cterm=NONE guifg=#ececf2 guibg=#ececf2 gui=NONE
-hi NonText ctermfg=189 ctermbg=189 cterm=NONE guifg=#f8f8ff guibg=#f8f8ff gui=NONE
+"hi NonText ctermfg=189 ctermbg=189 cterm=NONE guifg=#f8f8ff guibg=#f8f8ff gui=NONE
+hi NonText ctermfg=bg ctermbg=bg cterm=NONE guifg=bg guibg=bg gui=NONE
 hi Number ctermfg=30 ctermbg=NONE cterm=NONE guifg=#009999 guibg=NONE gui=NONE
 hi Operator ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold
 hi PreProc ctermfg=0 ctermbg=NONE cterm=bold guifg=#000000 guibg=NONE gui=bold

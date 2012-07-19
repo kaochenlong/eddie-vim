@@ -186,7 +186,8 @@ hi FoldColumn   ctermfg=24              ctermbg=252             cterm=NONE
 hi Folded       ctermfg=24              ctermbg=252             cterm=NONE
 hi IncSearch    ctermfg=255             ctermbg=160             cterm=NONE
 hi LineNr       ctermfg=253             ctermbg=110             cterm=NONE
-hi NonText      ctermfg=110             ctermbg=255             cterm=NONE
+"hi NonText      ctermfg=110             ctermbg=255             cterm=NONE
+hi NonText      ctermfg=bg             ctermbg=bg             cterm=NONE
 hi Pmenu        ctermfg=fg              ctermbg=195             cterm=NONE
 hi PmenuSbar    ctermfg=255             ctermbg=153             cterm=NONE
 hi PmenuSel     ctermfg=255             ctermbg=21              cterm=NONE
