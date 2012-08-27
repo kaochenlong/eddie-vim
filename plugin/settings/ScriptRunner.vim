@@ -40,13 +40,6 @@ else
   autocmd BufRead,BufNewFile *.rb map <F5> :echo "you need to install Ruby first!"<CR>
 endif
 
-" Scala
-if executable("scala")
-  autocmd BufRead,BufNewFile *.scala map <F5> :% w !scala %<CR>
-else
-  autocmd BufRead,BufNewFile *.scala map <F5> :echo "you need to install Scala first!"<CR>
-end
-
 " Perl
 if executable("perl")
   autocmd BufRead,BufNewFile *.pl map <F5> :% w !perl %<CR>

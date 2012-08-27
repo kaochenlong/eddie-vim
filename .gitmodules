@@ -44,9 +44,6 @@
 [submodule "bundle/vim-css-color"]
   path = bundle/vim-css-color
   url = git://github.com/ap/vim-css-color.git
-[submodule "bundle/haskell.vim"]
-  path = bundle/haskell.vim
-  url = git://github.com/vim-scripts/haskell.vim.git
 [submodule "bundle/vim-scss"]
   path = bundle/vim-scss
   url = git://github.com/cakebaker/scss-syntax.vim.git
@@ -105,9 +102,6 @@
 [submodule "bundle/vim-indent-object"]
   path = bundle/vim-indent-object
   url = git://github.com/michaeljsmith/vim-indent-object.git
-[submodule "bundle/vim-scala"]
-  path = bundle/vim-scala
-  url = git://github.com/derekwyatt/vim-scala.git
 [submodule "bundle/vimwiki"]
   path = bundle/vimwiki
   url = git://github.com/vim-scripts/vimwiki.git
