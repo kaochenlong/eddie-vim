@@ -55,7 +55,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 9. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
 
-10. you may need to install `ack` first if you use `ack.vim`.
+10. you may need to install `ack` or `silver searcher` first if you use `ack.vim`.
 
 ### Update:
 
