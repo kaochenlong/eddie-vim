@@ -22,3 +22,6 @@ autocmd! BufNewFile,BufRead *.zsh-theme set filetype=zsh
 
 " Nginx Config
 autocmd! BufNewFile,BufRead nginx.conf set filetype=nginx
+
+" CocoaPods
+autocmd! BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
