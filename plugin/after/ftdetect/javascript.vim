@@ -5,5 +5,5 @@ else
   autocmd BufRead,BufNewFile *.js map <F5> :echo "you need to install SpiderMonkey first!"<CR>
 endif
 
-autocmd BufRead,BufNewFile *.js map <F6> :JSLintUpdate<CR>
-autocmd BufRead,BufNewFile *.js map <F7> :ToggleHighlightError<CR>
+autocmd BufRead,BufNewFile *.js map <F9> :JSLintUpdate<CR>
+autocmd BufRead,BufNewFile *.js map <F10> :ToggleHighlightError<CR>
