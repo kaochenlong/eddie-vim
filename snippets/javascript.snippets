@@ -1,2 +1,18 @@
 snippet log
-	console.log("${1}")${2}
+	console.log("${1}");${2}
+# if
+snippet if
+	if (${1:condition}) {
+		${2}
+	}${3}
+# if ... else
+snippet ife
+	if (${1:condition}) {
+		${2}
+	} else {
+		${3}
+	}${4}
+snippet defconsole
+	if (typeof(console) === 'undefined') {
+		console = { log: print }; // for SpidereMonkey
+	}
