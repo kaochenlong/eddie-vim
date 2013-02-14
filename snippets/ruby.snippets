@@ -14,24 +14,11 @@ snippet aa
 	attr_accessible :${1}
 snippet flash
 	flash[:${1:notice}] = "${2}"
-snippet crud
-	def index${1}
-	end
-
-	def show
-	end
-
-	def new
-	end
-
-	def create
-	end
-
-	def edit
-	end
-
-	def update
-	end
-
-	def destroy
-	end
+snippet init initializer
+	def initialize
+		${1}
+	end${2}
+snippet init initialize with parameters
+	def initialize(${1:args})
+		@$1 = $1${2}
+	end${3}
