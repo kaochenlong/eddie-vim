@@ -115,3 +115,6 @@
 [submodule "bundle/jslint.vim"]
 	path = bundle/jslint.vim
 	url = git://github.com/kaochenlong/jslint.vim.git
+[submodule "bundle/vim-ruby-refactoring"]
+	path = bundle/vim-ruby-refactoring
+	url = git://github.com/ecomba/vim-ruby-refactoring.git
