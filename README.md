@@ -24,6 +24,20 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 ### Installation and Requisites:
 
+#### Automatic installer... (DO YOU TRUST ME?)
+
+You can install this via the command line with either `curl` or `wget`.
+
+1. via curl:
+
+`curl curl -L https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh | sh`
+
+2. or via wget:
+
+`wget --no-check-certificate https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh -O - | sh`
+
+#### Manual installation
+
 1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
 2. `cd ~` to change directory to your home directory.
