@@ -30,7 +30,7 @@ You can install this via the command line with either `curl` or `wget`.
 
 1. via curl:
 
-`curl curl -L https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh | sh`
+`curl -L https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh | sh`
 
 2. or via wget:
 
