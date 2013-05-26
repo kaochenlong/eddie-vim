@@ -103,3 +103,14 @@ snippet divc
 	<div class="${1:name}">
 		${2}
 	</div>
+snippet canvas
+	<canvas id="${1:id}" width="${2:width}" height="${3:height}" style="${4:style}"></canvas>${5}
+snippet getid
+	document.getElementById("${1:id}");${2}
+snippet fn
+	function ${1:function_name} (${2:argument})
+	{
+		${3:// body...}
+	}${4}
+snippet log
+	console.log("${1:message}");${2}
