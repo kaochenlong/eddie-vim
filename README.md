@@ -16,7 +16,7 @@ you can link your `~/.vimrc` to any one of them as you wish :)
 
 It's how my Vim looks now:
 
-![image](https://github.com/kaochenlong/eddie-vim/raw/master/screenshots/vim-2012-03-27-macvim.png)
+![image](https://github.com/kaochenlong/eddie-vim/raw/ruby/screenshots/vim-airline.png)
 
 and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here</a> are some screenshots on the other platforms.
 
@@ -53,9 +53,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
         ln -s eddie-vim/gvimrc .gvimrc
 
-9. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
-
-10. you may need to install `ack` or `silver searcher` first if you use `ack.vim`.
+9. you may need to install `ack` or `silver searcher` first if you use `ack.vim`.
 
 ### Update:
 
