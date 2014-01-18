@@ -1,7 +1,3 @@
-[submodule "bundle/cocoa.vim"]
-  path = bundle/cocoa.vim
-  url = git://github.com/msanders/cocoa.vim.git
-  ignore = untracked
 [submodule "bundle/vim-markdown"]
   path = bundle/vim-markdown
   url = git://github.com/plasticboy/vim-markdown.git
@@ -29,14 +25,12 @@
 [submodule "bundle/vim-ruby"]
   path = bundle/vim-ruby
   url = git://github.com/vim-ruby/vim-ruby.git
-  ignore = untracked
 [submodule "bundle/vim-surround"]
   path = bundle/vim-surround
   url = git://github.com/tpope/vim-surround.git
 [submodule "bundle/taglist.vim"]
   path = bundle/taglist.vim
   url = git://github.com/vim-scripts/taglist.vim.git
-  ignore = untracked
 [submodule "bundle/vim-css-color"]
   path = bundle/vim-css-color
   url = git://github.com/ap/vim-css-color.git
@@ -67,18 +61,12 @@
 [submodule "bundle/vim-ragtag"]
   path = bundle/vim-ragtag
   url = git://github.com/tpope/vim-ragtag.git
-  ignore = untracked
 [submodule "bundle/matchit"]
   path = bundle/matchit
   url = git://github.com/vim-scripts/matchit.zip.git
-  ignore = untracked
-[submodule "bundle/calendar.vim"]
-  path = bundle/calendar.vim
-  url = git://github.com/vim-scripts/calendar.vim--Matsumoto.git
 [submodule "bundle/align"]
   path = bundle/align
   url = git://github.com/vim-scripts/Align.git
-  ignore = untracked
 [submodule "bundle/vim-octopress"]
   path = bundle/vim-octopress
   url = git://github.com/tangledhelix/vim-octopress.git
@@ -86,34 +74,21 @@
 [submodule "bundle/vim-pathogen"]
   path = bundle/vim-pathogen
   url = git://github.com/tpope/vim-pathogen.git
-[submodule "bundle/vim-actionscript"]
-  path = bundle/vim-actionscript
-  url = git://github.com/vim-scripts/actionscript.vim--Leider.git
 [submodule "bundle/vim-jade"]
   path = bundle/vim-jade
   url = git://github.com/digitaltoad/vim-jade.git
-[submodule "bundle/nginx"]
-  path = bundle/nginx
-  url = git://github.com/vim-scripts/nginx.vim.git
 [submodule "bundle/vim-indent-object"]
   path = bundle/vim-indent-object
   url = git://github.com/michaeljsmith/vim-indent-object.git
 [submodule "bundle/vimwiki"]
   path = bundle/vimwiki
   url = git://github.com/vim-scripts/vimwiki.git
-  ignore = untracked
 [submodule "bundle/delimitMate"]
   path = bundle/delimitMate
   url = git://github.com/Raimondi/delimitMate.git
 [submodule "bundle/snipmate"]
   path = bundle/snipmate
   url = git://github.com/kaochenlong/snipmate.vim.git
-[submodule "bundle/jslint.vim"]
-	path = bundle/jslint.vim
-	url = git://github.com/kaochenlong/jslint.vim.git
-[submodule "bundle/vim-ruby-refactoring"]
-	path = bundle/vim-ruby-refactoring
-	url = git://github.com/ecomba/vim-ruby-refactoring.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
