@@ -37,10 +37,6 @@
   path = bundle/taglist.vim
   url = git://github.com/vim-scripts/taglist.vim.git
   ignore = untracked
-[submodule "bundle/vim-powerline"]
-  path = bundle/vim-powerline
-  url = git://github.com/Lokaltog/vim-powerline.git
-  ignore = untracked
 [submodule "bundle/vim-css-color"]
   path = bundle/vim-css-color
   url = git://github.com/ap/vim-css-color.git
@@ -118,3 +114,6 @@
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
 	url = git://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
