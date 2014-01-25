@@ -92,6 +92,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/minibufexpl"]
-	path = bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/go.vim"]
+	path = bundle/go.vim
+	url = https://github.com/golangtw/go.vim.git
+[submodule "bundle/gocode.vim"]
+	path = bundle/gocode.vim
+	url = https://github.com/golangtw/gocode.vim.git
