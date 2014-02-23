@@ -50,18 +50,12 @@
 [submodule "bundle/vim-sass"]
   path = bundle/vim-sass
   url = git://github.com/tpope/vim-haml.git
-[submodule "bundle/vim-minitest"]
-  path = bundle/vim-minitest
-  url = git://github.com/sunaku/vim-ruby-minitest.git
 [submodule "bundle/vim-fugitive"]
   path = bundle/vim-fugitive
   url = git://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-javascript"]
   path = bundle/vim-javascript
   url = git://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-jst"]
-  path = bundle/vim-jst
-  url = git://github.com/briancollins/vim-jst.git
 [submodule "bundle/ctrlp.vim"]
   path = bundle/ctrlp.vim
   url = git://github.com/kien/ctrlp.vim.git
@@ -90,12 +84,6 @@
 [submodule "bundle/vim-pathogen"]
   path = bundle/vim-pathogen
   url = git://github.com/tpope/vim-pathogen.git
-[submodule "bundle/vim-actionscript"]
-  path = bundle/vim-actionscript
-  url = git://github.com/vim-scripts/actionscript.vim--Leider.git
-[submodule "bundle/vim-jade"]
-  path = bundle/vim-jade
-  url = git://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/nginx"]
   path = bundle/nginx
   url = git://github.com/vim-scripts/nginx.vim.git
@@ -109,12 +97,9 @@
 [submodule "bundle/delimitMate"]
   path = bundle/delimitMate
   url = git://github.com/Raimondi/delimitMate.git
-[submodule "bundle/snipmate"]
-  path = bundle/snipmate
-  url = git://github.com/kaochenlong/snipmate.vim.git
-[submodule "bundle/jslint.vim"]
-	path = bundle/jslint.vim
-	url = git://github.com/kaochenlong/jslint.vim.git
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = git://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
