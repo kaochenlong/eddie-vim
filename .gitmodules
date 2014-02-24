@@ -88,3 +88,6 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git@github.com:garbas/vim-snipmate.git
