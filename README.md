@@ -85,22 +85,24 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
     a. `<F2>` to toggle NERDTree on and off.
 
-    b. `<F4>` to toggle Taglist window.
+    b. `<F3>` to search Buffer with CtrlP plugin.
 
-    c. `<F5>` is the script runner, according to it's filetype, it will run Ruby(*.rb) ,Python(*.py) or Javascript(*.js) file(SpiderMonkey is needed), even CoffeeScript(*.coffee, but you may have to install CoffeeScript first). If the filetype is VimScript, `<F5>` will run `:source %` for you.
+    c. `<F4>` to toggle Taglist window.
 
-    d. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
+    d. `<F5>` is the script runner, according to it's filetype, it will run Ruby(*.rb) ,Python(*.py) or Javascript(*.js) file(SpiderMonkey is needed), even CoffeeScript(*.coffee, but you may have to install CoffeeScript first). If the filetype is VimScript, `<F5>` will run `:source %` for you.
 
-    e. hit `<ctrl>p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. And `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
+    e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
 
-    f. hit `<leader>` twice to toggle comment on and off.
+    f. hit `<ctrl>p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. And `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
 
-    g. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
+    g. hit `<leader>` twice to toggle comment on and off.
+
+    h. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
 
 
-    h. `<leader>v` to open `.vimrc` in a new tab.
+    i. `<leader>v` to open `.vimrc` in a new tab.
 
-    i. `<leader>0` to edit or create `README.md` in current working directory.
+    j. `<leader>0` to edit or create `README.md` in current working directory.
 
 4. Remove tailing whitespace automatically while saving.
 
