@@ -7,9 +7,9 @@
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
-call pathogen#incubate()
+"call pathogen#incubate()
 filetype plugin indent on
-call pathogen#infect()
+call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 
 " hit enter to cancel searched highlight
