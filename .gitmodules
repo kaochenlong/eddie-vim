@@ -94,3 +94,6 @@
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-swift"]
+	path = bundle/vim-swift
+	url = git@github.com:toyamarinyon/vim-swift.git
