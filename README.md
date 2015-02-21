@@ -1,6 +1,8 @@
-My personal Vim configurations and some plugins which I used in my daily job.
+## Update!
+I recently removed and reorganized redundant settings and plugins, and put it on another repository https://github.com/kaochenlong/eddie-vim2
 
-I removed and reorganized redundant settings and plugins, and put it on https://github.com/kaochenlong/eddie-vim2
+## Intro
+My personal Vim configurations and some plugins which I used in my daily job.
 
 I put Vim related settings in `plugin/settings/Settings.vim`, and isolate other plugins' settings in `plugin/settings` directory.
 
